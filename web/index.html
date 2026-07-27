@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Droid Tycoon — Rebirth Lookup</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #1a222c;
+      --ink: #e8eef4;
+      --muted: #9aa7b5;
+      --accent: #e8a54b;
+      --rule: #2a3542;
+      --done: #3d7a5a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.4;
+    }
+    header {
+      padding: 1rem 1.25rem 0.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 650;
+    }
+    header p {
+      margin: 0.25rem 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    header a { color: var(--accent); }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem 1.25rem 2.5rem;
+    }
+    .controls {
+      display: grid;
+      gap: 0.85rem;
+      grid-template-columns: 1fr 1fr;
+      margin: 1rem 0;
+      padding: 1rem;
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+    }
+    @media (max-width: 560px) {
+      .controls { grid-template-columns: 1fr; }
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    select, input[type="number"], input[type="search"] {
+      font: inherit;
+      font-size: 1rem;
+      text-transform: none;
+      letter-spacing: 0;
+      color: var(--ink);
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 0.5rem 0.65rem;
+    }
+    input[type="range"] { width: 100%; }
+    .search-row { grid-column: 1 / -1; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .card h2 {
+      margin: 0 0 0.35rem;
+      font-size: 1.1rem;
+    }
+    .cash {
+      color: var(--accent);
+      font-weight: 650;
+      font-size: 1.05rem;
+    }
+    .bonus {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin: 0.35rem 0 0.75rem;
+    }
+    .req-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.5rem;
+    }
+    .req-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      align-items: baseline;
+      padding: 0.55rem 0.65rem;
+      background: var(--bg);
+      border-radius: 6px;
+      border: 1px solid var(--rule);
+    }
+    .req-list li.checked {
+      border-color: var(--done);
+      opacity: 0.75;
+    }
+    .req-meta { color: var(--muted); font-size: 0.85rem; }
+    .req-action {
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+      color: var(--accent);
+    }
+    .mark {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: none;
+      letter-spacing: 0;
+      margin-top: 0.75rem;
+    }
+    .upcoming h3, .results h3 {
+      margin: 0 0 0.5rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .mini {
+      font-size: 0.88rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .mini:last-child { border-bottom: 0; }
+    .mini strong { color: var(--accent); }
+    .hit {
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.9rem;
+    }
+    .hit-jump {
+      display: block;
+      width: 100%;
+      text-align: left;
+      font: inherit;
+      color: inherit;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+    .hit-jump:hover strong { color: var(--accent); }
+    .empty { color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap" style="padding-bottom:1rem;padding-top:0">
+      <h1>Rebirth Lookup</h1>
+      <p>Star Wars: Droid Tycoon · <a href="print.html">Printable sheets</a></p>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="controls">
+      <label>
+        Cycle
+        <select id="cycle">
+          <option value="1">Cycle 1</option>
+          <option value="2">Cycle 2</option>
+          <option value="3">Cycle 3</option>
+          <option value="4">Cycle 4</option>
+        </select>
+      </label>
+      <label>
+        Level <span id="levelLabel"></span>
+        <input id="level" type="range" min="1" max="30" value="1" />
+        <input id="levelNum" type="number" min="1" max="30" value="1" />
+      </label>
+      <label class="search-row">
+        Find a droid
+        <input id="search" type="search" placeholder="e.g. Mecha-Droid" autocomplete="off" />
+      </label>
+    </div>
+
+    <div id="results" class="card results" hidden></div>
+    <div id="current" class="card"></div>
+    <div id="upcoming" class="card upcoming"></div>
+  </div>
+
+  <script src="data.js"></script>
+  <script>
+    const D = window.REBIRTH_DATA;
+    const LS_KEY = 'droid-tycoon-rebirth-checks';
+
+    const loadChecks = () => {
+      try { return JSON.parse(localStorage.getItem(LS_KEY) || '{}'); }
+      catch { return {}; }
+    };
+    const saveChecks = (obj) => localStorage.setItem(LS_KEY, JSON.stringify(obj));
+    const checkKey = (c, l) => `${c}:${l}`;
+
+    const titleCase = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+    const droidName = (id) => D.droids[id]?.name || id;
+    const fmtAction = (a) => a.type === 'sell' ? 'SELL' : a.amount;
+    const fmtReq = (req) =>
+      `${droidName(req.droid)} · ${titleCase(req.skin)} ${titleCase(req.rarity)}`;
+    /** Normalize for loose matching: "Mecha Droid", "mecha-droid", "MECHA" all work. */
+    const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '');
+
+    const cycleEl = document.getElementById('cycle');
+    const levelEl = document.getElementById('level');
+    const levelNum = document.getElementById('levelNum');
+    const levelLabel = document.getElementById('levelLabel');
+    const searchEl = document.getElementById('search');
+    const currentEl = document.getElementById('current');
+    const upcomingEl = document.getElementById('upcoming');
+    const resultsEl = document.getElementById('results');
+
+    const syncLevelInputs = (v) => {
+      levelEl.value = v;
+      levelNum.value = v;
+      levelLabel.textContent = `(${v})`;
+    };
+
+    const getLevel = (cycle, level) =>
+      D.cycleData[String(cycle)].levels.find((x) => x.level === level);
+
+    const renderCurrent = () => {
+      const c = Number(cycleEl.value);
+      const l = Number(levelEl.value);
+      const lvl = getLevel(c, l);
+      const cost = D.costs[String(l)];
+      const bonus = D.bonuses[String(l)];
+      const checks = loadChecks();
+      const done = !!checks[checkKey(c, l)];
+
+      currentEl.innerHTML = `
+        <h2>Cycle ${c} · Level ${l}</h2>
+        <div class="cash">${cost.display} credits</div>
+        ${bonus ? `<div class="bonus">Bonuses: ${bonus.power} power · ${bonus.rebirthPct}% rebirth · ${bonus.xpPct}% XP</div>` : ''}
+        <ul class="req-list">
+          ${lvl.requirements.map((req) => `
+            <li class="${done ? 'checked' : ''}">
+              <span>${fmtReq(req)}<div class="req-meta">${req.droid}</div></span>
+              <span class="req-action">${fmtAction(req.action)}</span>
+            </li>
+          `).join('')}
+        </ul>
+        <label class="mark">
+          <input type="checkbox" id="doneBox" ${done ? 'checked' : ''} />
+          Mark level complete (saved on this device)
+        </label>
+      `;
+      document.getElementById('doneBox').addEventListener('change', (e) => {
+        const next = loadChecks();
+        if (e.target.checked) next[checkKey(c, l)] = true;
+        else delete next[checkKey(c, l)];
+        saveChecks(next);
+        renderCurrent();
+        renderUpcoming();
+      });
+    };
+
+    const renderUpcoming = () => {
+      const c = Number(cycleEl.value);
+      const l = Number(levelEl.value);
+      const checks = loadChecks();
+      const next = [];
+      for (let n = l + 1; n <= Math.min(30, l + 3); n++) next.push(n);
+      upcomingEl.innerHTML = `<h3>Next levels</h3>` + (next.length ? next.map((n) => {
+        const lvl = getLevel(c, n);
+        const cost = D.costs[String(n)];
+        const done = checks[checkKey(c, n)] ? ' ✓' : '';
+        return `<div class="mini"><strong>L${n}</strong> ${cost.display}${done}<br/>${
+          lvl.requirements.map((r) => `${droidName(r.droid)} (${titleCase(r.skin)})`).join(' · ')
+        }</div>`;
+      }).join('') : `<p class="empty">You're at the top of the cycle.</p>`);
+    };
+
+    const renderSearch = () => {
+      const qRaw = searchEl.value.trim();
+      const q = norm(qRaw);
+      if (!q) {
+        resultsEl.hidden = true;
+        resultsEl.innerHTML = '';
+        return;
+      }
+      const hits = [];
+      for (let c = 1; c <= 4; c++) {
+        for (const lvl of D.cycleData[String(c)].levels) {
+          for (const req of lvl.requirements) {
+            const name = norm(droidName(req.droid));
+            const id = norm(req.droid);
+            if (name.includes(q) || id.includes(q)) {
+              hits.push({ c, level: lvl.level, req, cost: D.costs[String(lvl.level)].display });
+            }
+          }
+        }
+      }
+      resultsEl.hidden = false;
+      resultsEl.innerHTML = `<h3>Droid search · ${hits.length} hit${hits.length === 1 ? '' : 's'}</h3>` +
+        (hits.length ? hits.map((h) => `
+          <div class="hit">
+            <button type="button" class="hit-jump" data-cycle="${h.c}" data-level="${h.level}">
+              <strong>C${h.c} L${h.level}</strong> (${h.cost}) —
+              ${fmtReq(h.req)} · ${fmtAction(h.req.action)}
+            </button>
+          </div>
+        `).join('') : `<p class="empty">No matches for “${qRaw}”.</p>`);
+      resultsEl.querySelectorAll('.hit-jump').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          cycleEl.value = btn.dataset.cycle;
+          syncLevelInputs(btn.dataset.level);
+          refresh();
+          currentEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+    };
+
+    const refresh = () => {
+      renderCurrent();
+      renderUpcoming();
+      renderSearch();
+    };
+
+    cycleEl.addEventListener('change', refresh);
+    levelEl.addEventListener('input', () => {
+      syncLevelInputs(levelEl.value);
+      refresh();
+    });
+    levelNum.addEventListener('change', () => {
+      let v = Math.max(1, Math.min(30, Number(levelNum.value) || 1));
+      syncLevelInputs(v);
+      refresh();
+    });
+    searchEl.addEventListener('input', renderSearch);
+
+    // Restore last view
+    const params = new URLSearchParams(location.search);
+    if (params.get('cycle')) cycleEl.value = params.get('cycle');
+    if (params.get('level')) syncLevelInputs(params.get('level'));
+    else syncLevelInputs(1);
+    refresh();
+  </script>
+</body>
+</html>

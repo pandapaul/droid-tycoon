@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Droid Tycoon — Rebirth Print Sheets</title>
+  <style>
+    :root {
+      --ink: #1a1a1a;
+      --muted: #555;
+      --rule: #ccc;
+      --skin-default: #444;
+      --skin-gold: #9a6b00;
+      --skin-diamond: #0a6e8a;
+      --skin-rainbow: #7a2d8a;
+      --skin-beskar: #3d3d3d;
+      --skin-galactic: #0b5c3b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: #f4f4f4;
+      line-height: 1.25;
+    }
+    .screen-bar {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0.75rem 1rem;
+      background: #111;
+      color: #f5f5f5;
+      font-size: 0.9rem;
+    }
+    .screen-bar a { color: #9fd3ff; }
+    .screen-bar button {
+      font: inherit;
+      padding: 0.4rem 0.8rem;
+      border: 1px solid #666;
+      background: #222;
+      color: #fff;
+      cursor: pointer;
+    }
+    .sheet {
+      max-width: 8.5in;
+      margin: 1rem auto;
+      padding: 0.4in 0.45in;
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    }
+    h1 {
+      margin: 0 0 0.15rem;
+      font-size: 1.35rem;
+      letter-spacing: 0.02em;
+    }
+    .meta {
+      margin: 0 0 0.6rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.68rem;
+    }
+    th, td {
+      border-bottom: 1px solid var(--rule);
+      padding: 0.22rem 0.28rem;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      border-bottom: 2px solid var(--ink);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    tr:nth-child(even) td { background: #fafafa; }
+    .check { width: 1.1rem; text-align: center; }
+    .check input { width: 0.85rem; height: 0.85rem; }
+    .lvl { width: 1.4rem; font-weight: 700; }
+    .cash { width: 2.6rem; white-space: nowrap; }
+    .bonus { width: 4.8rem; color: var(--muted); white-space: nowrap; font-size: 0.62rem; }
+    .req {
+      display: block;
+      white-space: nowrap;
+    }
+    .skin-default { color: var(--skin-default); }
+    .skin-gold { color: var(--skin-gold); }
+    .skin-diamond { color: var(--skin-diamond); }
+    .skin-rainbow { color: var(--skin-rainbow); }
+    .skin-beskar { color: var(--skin-beskar); }
+    .skin-galactic { color: var(--skin-galactic); font-weight: 600; }
+    .action {
+      color: var(--muted);
+      font-size: 0.62rem;
+    }
+    .legend {
+      margin-top: 0.5rem;
+      font-size: 0.68rem;
+      color: var(--muted);
+    }
+    @media print {
+      body { background: #fff; }
+      .screen-bar { display: none !important; }
+      .sheet {
+        max-width: none;
+        margin: 0;
+        padding: 0.25in 0.3in;
+        box-shadow: none;
+        page-break-after: always;
+      }
+      .sheet:last-child { page-break-after: auto; }
+      tr:nth-child(even) td { background: transparent; }
+      table { font-size: 0.62rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="screen-bar">
+    <strong>Print sheets</strong>
+    <span>One cycle per page · use Print → Save as PDF to share</span>
+    <button type="button" onclick="window.print()">Print / Save PDF</button>
+    <a href="index.html">Interactive lookup</a>
+  </div>
+  <div id="root"></div>
+  <script src="data.js"></script>
+  <script>
+    const D = window.REBIRTH_DATA;
+    const skinClass = (s) => 'skin-' + s;
+    const fmtReq = (req) => {
+      const name = D.droids[req.droid]?.name || req.droid;
+      const skin = req.skin.charAt(0).toUpperCase() + req.skin.slice(1);
+      const rarity = req.rarity.charAt(0).toUpperCase() + req.rarity.slice(1);
+      const action = req.action.type === 'sell'
+        ? 'SELL'
+        : String(req.action.amount);
+      return `<span class="req"><span class="${skinClass(req.skin)}">${name}</span> · ${skin} ${rarity} <span class="action">(${action})</span></span>`;
+    };
+    const fmtBonus = (lvl) => {
+      const b = D.bonuses[String(lvl)];
+      if (!b) return '';
+      return `${b.power} · ${b.rebirthPct}% · ${b.xpPct}% XP`;
+    };
+    const root = document.getElementById('root');
+    for (let c = 1; c <= D.cycles; c++) {
+      const cycle = D.cycleData[String(c)];
+      const rows = cycle.levels.map((lvl) => {
+        const cost = D.costs[String(lvl.level)];
+        const [a, b, d] = lvl.requirements;
+        return `<tr>
+          <td class="check"><input type="checkbox" aria-label="Done level ${lvl.level}" /></td>
+          <td class="lvl">${lvl.level}</td>
+          <td class="cash">${cost.display}</td>
+          <td>${fmtReq(a)}</td>
+          <td>${fmtReq(b)}</td>
+          <td>${fmtReq(d)}</td>
+          <td class="bonus">${fmtBonus(lvl.level)}</td>
+        </tr>`;
+      }).join('');
+      const sheet = document.createElement('section');
+      sheet.className = 'sheet';
+      sheet.innerHTML = `
+        <h1>Star Wars: Droid Tycoon — ${cycle.name}</h1>
+        <p class="meta">Check boxes as you clear levels. Bonuses (power · rebirth% · XP%) start at level 13. Higher skins count for lower skin requirements.</p>
+        <table>
+          <thead>
+            <tr>
+              <th class="check"></th>
+              <th>Lvl</th>
+              <th>Cash</th>
+              <th>Droid 1</th>
+              <th>Droid 2</th>
+              <th>Droid 3</th>
+              <th>Bonuses</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+        <p class="legend">Skins: Default · Gold · Diamond · Rainbow · Beskar · Galactic. Action badge: SELL or chart value.</p>
+      `;
+      root.appendChild(sheet);
+    }
+  </script>
+</body>
+</html>

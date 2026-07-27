@@ -1,0 +1,155 @@
+{
+  "description": "Shared cash milestones for rebirth levels 1-30 (identical across all cycles).",
+  "levels": [
+    {
+      "level": 1,
+      "cash": 10000,
+      "display": "10K"
+    },
+    {
+      "level": 2,
+      "cash": 150000,
+      "display": "150K"
+    },
+    {
+      "level": 3,
+      "cash": 975000,
+      "display": "975K"
+    },
+    {
+      "level": 4,
+      "cash": 2950000,
+      "display": "2.95M"
+    },
+    {
+      "level": 5,
+      "cash": 5350000,
+      "display": "5.35M"
+    },
+    {
+      "level": 6,
+      "cash": 9850000,
+      "display": "9.85M"
+    },
+    {
+      "level": 7,
+      "cash": 14500000,
+      "display": "14.5M"
+    },
+    {
+      "level": 8,
+      "cash": 36000000,
+      "display": "36M"
+    },
+    {
+      "level": 9,
+      "cash": 89000000,
+      "display": "89M"
+    },
+    {
+      "level": 10,
+      "cash": 220000000,
+      "display": "220M"
+    },
+    {
+      "level": 11,
+      "cash": 550000000,
+      "display": "550M"
+    },
+    {
+      "level": 12,
+      "cash": 1360000000,
+      "display": "1.36B"
+    },
+    {
+      "level": 13,
+      "cash": 3400000000,
+      "display": "3.4B"
+    },
+    {
+      "level": 14,
+      "cash": 8450000000,
+      "display": "8.45B"
+    },
+    {
+      "level": 15,
+      "cash": 21000000000,
+      "display": "21B"
+    },
+    {
+      "level": 16,
+      "cash": 52000000000,
+      "display": "52B"
+    },
+    {
+      "level": 17,
+      "cash": 130000000000,
+      "display": "130B"
+    },
+    {
+      "level": 18,
+      "cash": 325000000000,
+      "display": "325B"
+    },
+    {
+      "level": 19,
+      "cash": 810000000000,
+      "display": "810B"
+    },
+    {
+      "level": 20,
+      "cash": 2000000000000,
+      "display": "2T"
+    },
+    {
+      "level": 21,
+      "cash": 3000000000000,
+      "display": "3T"
+    },
+    {
+      "level": 22,
+      "cash": 4500000000000,
+      "display": "4.5T"
+    },
+    {
+      "level": 23,
+      "cash": 6000000000000,
+      "display": "6T"
+    },
+    {
+      "level": 24,
+      "cash": 9000000000000,
+      "display": "9T"
+    },
+    {
+      "level": 25,
+      "cash": 13500000000000,
+      "display": "13.5T"
+    },
+    {
+      "level": 26,
+      "cash": 21000000000000,
+      "display": "21T"
+    },
+    {
+      "level": 27,
+      "cash": 32000000000000,
+      "display": "32T"
+    },
+    {
+      "level": 28,
+      "cash": 45000000000000,
+      "display": "45T"
+    },
+    {
+      "level": 29,
+      "cash": 68000000000000,
+      "display": "68T"
+    },
+    {
+      "level": 30,
+      "cash": 100000000000000,
+      "display": "100T"
+    }
+  ]
+}

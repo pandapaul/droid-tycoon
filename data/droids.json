@@ -1,0 +1,249 @@
+{
+  "description": "Catalog of droids referenced by rebirth requirements.",
+  "droids": {
+    "2bb": {
+      "id": "2bb",
+      "name": "2BB"
+    },
+    "a-lt": {
+      "id": "a-lt",
+      "name": "A-LT"
+    },
+    "amp-walker": {
+      "id": "amp-walker",
+      "name": "AMP Walker"
+    },
+    "arg": {
+      "id": "arg",
+      "name": "ARG"
+    },
+    "b-u4d": {
+      "id": "b-u4d",
+      "name": "B-U4D"
+    },
+    "b1-battle": {
+      "id": "b1-battle",
+      "name": "B1 Battle"
+    },
+    "b1-heavy": {
+      "id": "b1-heavy",
+      "name": "B1 Heavy"
+    },
+    "b1-security": {
+      "id": "b1-security",
+      "name": "B1 Security"
+    },
+    "b2-heavy": {
+      "id": "b2-heavy",
+      "name": "B2 Heavy"
+    },
+    "b2-rp": {
+      "id": "b2-rp",
+      "name": "B2-RP"
+    },
+    "b2-super": {
+      "id": "b2-super",
+      "name": "B2 Super"
+    },
+    "bal-core": {
+      "id": "bal-core",
+      "name": "BAL-Core"
+    },
+    "bb": {
+      "id": "bb",
+      "name": "BB"
+    },
+    "bb9": {
+      "id": "bb9",
+      "name": "BB9"
+    },
+    "bdx-explorer": {
+      "id": "bdx-explorer",
+      "name": "BDX Explorer"
+    },
+    "cb": {
+      "id": "cb",
+      "name": "CB"
+    },
+    "cyclens": {
+      "id": "cyclens",
+      "name": "Cyclens"
+    },
+    "cyclo-grav": {
+      "id": "cyclo-grav",
+      "name": "Cyclo-Grav"
+    },
+    "drft-r": {
+      "id": "drft-r",
+      "name": "DRFT-R"
+    },
+    "drk-1-probe": {
+      "id": "drk-1-probe",
+      "name": "DRK-1 Probe"
+    },
+    "gonk": {
+      "id": "gonk",
+      "name": "Gonk"
+    },
+    "groundmech": {
+      "id": "groundmech",
+      "name": "Groundmech"
+    },
+    "gunrunner": {
+      "id": "gunrunner",
+      "name": "Gunrunner"
+    },
+    "haul-r": {
+      "id": "haul-r",
+      "name": "Haul-R"
+    },
+    "hov-r": {
+      "id": "hov-r",
+      "name": "HOV-R"
+    },
+    "id10": {
+      "id": "id10",
+      "name": "ID10"
+    },
+    "ig": {
+      "id": "ig",
+      "name": "IG"
+    },
+    "kx": {
+      "id": "kx",
+      "name": "KX"
+    },
+    "lep": {
+      "id": "lep",
+      "name": "LEP"
+    },
+    "lng-shot": {
+      "id": "lng-shot",
+      "name": "LNG-Shot"
+    },
+    "lo": {
+      "id": "lo",
+      "name": "LO"
+    },
+    "loadlifter": {
+      "id": "loadlifter",
+      "name": "Loadlifter"
+    },
+    "mecha-droid": {
+      "id": "mecha-droid",
+      "name": "Mecha-Droid"
+    },
+    "mo-trak": {
+      "id": "mo-trak",
+      "name": "MO-TRAK"
+    },
+    "mono-wlkr": {
+      "id": "mono-wlkr",
+      "name": "Mono-WLKR"
+    },
+    "mouse": {
+      "id": "mouse",
+      "name": "Mouse"
+    },
+    "nav-ex": {
+      "id": "nav-ex",
+      "name": "NAV-EX"
+    },
+    "opti-pod": {
+      "id": "opti-pod",
+      "name": "Opti-Pod"
+    },
+    "opti-strk": {
+      "id": "opti-strk",
+      "name": "Opti-STRK"
+    },
+    "orb-walker": {
+      "id": "orb-walker",
+      "name": "ORB-Walker"
+    },
+    "pit": {
+      "id": "pit",
+      "name": "PIT"
+    },
+    "proto-roller": {
+      "id": "proto-roller",
+      "name": "Proto-Roller"
+    },
+    "r2": {
+      "id": "r2",
+      "name": "R2"
+    },
+    "r3": {
+      "id": "r3",
+      "name": "R3"
+    },
+    "r4": {
+      "id": "r4",
+      "name": "R4"
+    },
+    "r5": {
+      "id": "r5",
+      "name": "R5"
+    },
+    "r6": {
+      "id": "r6",
+      "name": "R6"
+    },
+    "r7": {
+      "id": "r7",
+      "name": "R7"
+    },
+    "r8": {
+      "id": "r8",
+      "name": "R8"
+    },
+    "r9": {
+      "id": "r9",
+      "name": "R9"
+    },
+    "ric": {
+      "id": "ric",
+      "name": "RIC"
+    },
+    "ric-1200": {
+      "id": "ric-1200",
+      "name": "RIC-1200"
+    },
+    "roll-r": {
+      "id": "roll-r",
+      "name": "Roll-R"
+    },
+    "sen-tri": {
+      "id": "sen-tri",
+      "name": "SEN-TRI"
+    },
+    "senate-hovercam": {
+      "id": "senate-hovercam",
+      "name": "Senate Hovercam"
+    },
+    "snow-mouse": {
+      "id": "snow-mouse",
+      "name": "Snow Mouse"
+    },
+    "strike-orb": {
+      "id": "strike-orb",
+      "name": "Strike-Orb"
+    },
+    "trak-r": {
+      "id": "trak-r",
+      "name": "TRAK-R"
+    },
+    "tri-tek": {
+      "id": "tri-tek",
+      "name": "Tri-TEK"
+    },
+    "util-tec": {
+      "id": "util-tec",
+      "name": "Util-Tec"
+    },
+    "vect-arm": {
+      "id": "vect-arm",
+      "name": "VECT-Arm"
+    }
+  }
+}

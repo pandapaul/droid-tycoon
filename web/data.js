@@ -1,0 +1,4211 @@
+window.REBIRTH_DATA = {
+  "game": "Star Wars: Droid Tycoon",
+  "cycles": 4,
+  "levelsPerCycle": 30,
+  "costs": {
+    "1": {
+      "level": 1,
+      "cash": 10000,
+      "display": "10K"
+    },
+    "2": {
+      "level": 2,
+      "cash": 150000,
+      "display": "150K"
+    },
+    "3": {
+      "level": 3,
+      "cash": 975000,
+      "display": "975K"
+    },
+    "4": {
+      "level": 4,
+      "cash": 2950000,
+      "display": "2.95M"
+    },
+    "5": {
+      "level": 5,
+      "cash": 5350000,
+      "display": "5.35M"
+    },
+    "6": {
+      "level": 6,
+      "cash": 9850000,
+      "display": "9.85M"
+    },
+    "7": {
+      "level": 7,
+      "cash": 14500000,
+      "display": "14.5M"
+    },
+    "8": {
+      "level": 8,
+      "cash": 36000000,
+      "display": "36M"
+    },
+    "9": {
+      "level": 9,
+      "cash": 89000000,
+      "display": "89M"
+    },
+    "10": {
+      "level": 10,
+      "cash": 220000000,
+      "display": "220M"
+    },
+    "11": {
+      "level": 11,
+      "cash": 550000000,
+      "display": "550M"
+    },
+    "12": {
+      "level": 12,
+      "cash": 1360000000,
+      "display": "1.36B"
+    },
+    "13": {
+      "level": 13,
+      "cash": 3400000000,
+      "display": "3.4B"
+    },
+    "14": {
+      "level": 14,
+      "cash": 8450000000,
+      "display": "8.45B"
+    },
+    "15": {
+      "level": 15,
+      "cash": 21000000000,
+      "display": "21B"
+    },
+    "16": {
+      "level": 16,
+      "cash": 52000000000,
+      "display": "52B"
+    },
+    "17": {
+      "level": 17,
+      "cash": 130000000000,
+      "display": "130B"
+    },
+    "18": {
+      "level": 18,
+      "cash": 325000000000,
+      "display": "325B"
+    },
+    "19": {
+      "level": 19,
+      "cash": 810000000000,
+      "display": "810B"
+    },
+    "20": {
+      "level": 20,
+      "cash": 2000000000000,
+      "display": "2T"
+    },
+    "21": {
+      "level": 21,
+      "cash": 3000000000000,
+      "display": "3T"
+    },
+    "22": {
+      "level": 22,
+      "cash": 4500000000000,
+      "display": "4.5T"
+    },
+    "23": {
+      "level": 23,
+      "cash": 6000000000000,
+      "display": "6T"
+    },
+    "24": {
+      "level": 24,
+      "cash": 9000000000000,
+      "display": "9T"
+    },
+    "25": {
+      "level": 25,
+      "cash": 13500000000000,
+      "display": "13.5T"
+    },
+    "26": {
+      "level": 26,
+      "cash": 21000000000000,
+      "display": "21T"
+    },
+    "27": {
+      "level": 27,
+      "cash": 32000000000000,
+      "display": "32T"
+    },
+    "28": {
+      "level": 28,
+      "cash": 45000000000000,
+      "display": "45T"
+    },
+    "29": {
+      "level": 29,
+      "cash": 68000000000000,
+      "display": "68T"
+    },
+    "30": {
+      "level": 30,
+      "cash": 100000000000000,
+      "display": "100T"
+    }
+  },
+  "bonuses": {
+    "13": {
+      "level": 13,
+      "power": 16,
+      "rebirthPct": 32,
+      "xpPct": 160
+    },
+    "14": {
+      "level": 14,
+      "power": 22,
+      "rebirthPct": 44,
+      "xpPct": 220
+    },
+    "15": {
+      "level": 15,
+      "power": 29,
+      "rebirthPct": 58,
+      "xpPct": 290
+    },
+    "16": {
+      "level": 16,
+      "power": 37,
+      "rebirthPct": 74,
+      "xpPct": 370
+    },
+    "17": {
+      "level": 17,
+      "power": 46,
+      "rebirthPct": 92,
+      "xpPct": 460
+    },
+    "18": {
+      "level": 18,
+      "power": 56,
+      "rebirthPct": 112,
+      "xpPct": 560
+    },
+    "19": {
+      "level": 19,
+      "power": 67,
+      "rebirthPct": 134,
+      "xpPct": 670
+    },
+    "20": {
+      "level": 20,
+      "power": 79,
+      "rebirthPct": 158,
+      "xpPct": 790
+    },
+    "21": {
+      "level": 21,
+      "power": 92,
+      "rebirthPct": 184,
+      "xpPct": 920
+    },
+    "22": {
+      "level": 22,
+      "power": 106,
+      "rebirthPct": 212,
+      "xpPct": 1060
+    },
+    "23": {
+      "level": 23,
+      "power": 121,
+      "rebirthPct": 242,
+      "xpPct": 1210
+    },
+    "24": {
+      "level": 24,
+      "power": 137,
+      "rebirthPct": 274,
+      "xpPct": 1370
+    },
+    "25": {
+      "level": 25,
+      "power": 154,
+      "rebirthPct": 308,
+      "xpPct": 1540
+    },
+    "26": {
+      "level": 26,
+      "power": 172,
+      "rebirthPct": 344,
+      "xpPct": 1720
+    },
+    "27": {
+      "level": 27,
+      "power": 191,
+      "rebirthPct": 382,
+      "xpPct": 1910
+    },
+    "28": {
+      "level": 28,
+      "power": 211,
+      "rebirthPct": 422,
+      "xpPct": 2110
+    },
+    "29": {
+      "level": 29,
+      "power": 232,
+      "rebirthPct": 464,
+      "xpPct": 2320
+    },
+    "30": {
+      "level": 30,
+      "power": 254,
+      "rebirthPct": 508,
+      "xpPct": 2540
+    }
+  },
+  "droids": {
+    "2bb": {
+      "id": "2bb",
+      "name": "2BB"
+    },
+    "a-lt": {
+      "id": "a-lt",
+      "name": "A-LT"
+    },
+    "amp-walker": {
+      "id": "amp-walker",
+      "name": "AMP Walker"
+    },
+    "arg": {
+      "id": "arg",
+      "name": "ARG"
+    },
+    "b-u4d": {
+      "id": "b-u4d",
+      "name": "B-U4D"
+    },
+    "b1-battle": {
+      "id": "b1-battle",
+      "name": "B1 Battle"
+    },
+    "b1-heavy": {
+      "id": "b1-heavy",
+      "name": "B1 Heavy"
+    },
+    "b1-security": {
+      "id": "b1-security",
+      "name": "B1 Security"
+    },
+    "b2-heavy": {
+      "id": "b2-heavy",
+      "name": "B2 Heavy"
+    },
+    "b2-rp": {
+      "id": "b2-rp",
+      "name": "B2-RP"
+    },
+    "b2-super": {
+      "id": "b2-super",
+      "name": "B2 Super"
+    },
+    "bal-core": {
+      "id": "bal-core",
+      "name": "BAL-Core"
+    },
+    "bb": {
+      "id": "bb",
+      "name": "BB"
+    },
+    "bb9": {
+      "id": "bb9",
+      "name": "BB9"
+    },
+    "bdx-explorer": {
+      "id": "bdx-explorer",
+      "name": "BDX Explorer"
+    },
+    "cb": {
+      "id": "cb",
+      "name": "CB"
+    },
+    "cyclens": {
+      "id": "cyclens",
+      "name": "Cyclens"
+    },
+    "cyclo-grav": {
+      "id": "cyclo-grav",
+      "name": "Cyclo-Grav"
+    },
+    "drft-r": {
+      "id": "drft-r",
+      "name": "DRFT-R"
+    },
+    "drk-1-probe": {
+      "id": "drk-1-probe",
+      "name": "DRK-1 Probe"
+    },
+    "gonk": {
+      "id": "gonk",
+      "name": "Gonk"
+    },
+    "groundmech": {
+      "id": "groundmech",
+      "name": "Groundmech"
+    },
+    "gunrunner": {
+      "id": "gunrunner",
+      "name": "Gunrunner"
+    },
+    "haul-r": {
+      "id": "haul-r",
+      "name": "Haul-R"
+    },
+    "hov-r": {
+      "id": "hov-r",
+      "name": "HOV-R"
+    },
+    "id10": {
+      "id": "id10",
+      "name": "ID10"
+    },
+    "ig": {
+      "id": "ig",
+      "name": "IG"
+    },
+    "kx": {
+      "id": "kx",
+      "name": "KX"
+    },
+    "lep": {
+      "id": "lep",
+      "name": "LEP"
+    },
+    "lng-shot": {
+      "id": "lng-shot",
+      "name": "LNG-Shot"
+    },
+    "lo": {
+      "id": "lo",
+      "name": "LO"
+    },
+    "loadlifter": {
+      "id": "loadlifter",
+      "name": "Loadlifter"
+    },
+    "mecha-droid": {
+      "id": "mecha-droid",
+      "name": "Mecha-Droid"
+    },
+    "mo-trak": {
+      "id": "mo-trak",
+      "name": "MO-TRAK"
+    },
+    "mono-wlkr": {
+      "id": "mono-wlkr",
+      "name": "Mono-WLKR"
+    },
+    "mouse": {
+      "id": "mouse",
+      "name": "Mouse"
+    },
+    "nav-ex": {
+      "id": "nav-ex",
+      "name": "NAV-EX"
+    },
+    "opti-pod": {
+      "id": "opti-pod",
+      "name": "Opti-Pod"
+    },
+    "opti-strk": {
+      "id": "opti-strk",
+      "name": "Opti-STRK"
+    },
+    "orb-walker": {
+      "id": "orb-walker",
+      "name": "ORB-Walker"
+    },
+    "pit": {
+      "id": "pit",
+      "name": "PIT"
+    },
+    "proto-roller": {
+      "id": "proto-roller",
+      "name": "Proto-Roller"
+    },
+    "r2": {
+      "id": "r2",
+      "name": "R2"
+    },
+    "r3": {
+      "id": "r3",
+      "name": "R3"
+    },
+    "r4": {
+      "id": "r4",
+      "name": "R4"
+    },
+    "r5": {
+      "id": "r5",
+      "name": "R5"
+    },
+    "r6": {
+      "id": "r6",
+      "name": "R6"
+    },
+    "r7": {
+      "id": "r7",
+      "name": "R7"
+    },
+    "r8": {
+      "id": "r8",
+      "name": "R8"
+    },
+    "r9": {
+      "id": "r9",
+      "name": "R9"
+    },
+    "ric": {
+      "id": "ric",
+      "name": "RIC"
+    },
+    "ric-1200": {
+      "id": "ric-1200",
+      "name": "RIC-1200"
+    },
+    "roll-r": {
+      "id": "roll-r",
+      "name": "Roll-R"
+    },
+    "sen-tri": {
+      "id": "sen-tri",
+      "name": "SEN-TRI"
+    },
+    "senate-hovercam": {
+      "id": "senate-hovercam",
+      "name": "Senate Hovercam"
+    },
+    "snow-mouse": {
+      "id": "snow-mouse",
+      "name": "Snow Mouse"
+    },
+    "strike-orb": {
+      "id": "strike-orb",
+      "name": "Strike-Orb"
+    },
+    "trak-r": {
+      "id": "trak-r",
+      "name": "TRAK-R"
+    },
+    "tri-tek": {
+      "id": "tri-tek",
+      "name": "Tri-TEK"
+    },
+    "util-tec": {
+      "id": "util-tec",
+      "name": "Util-Tec"
+    },
+    "vect-arm": {
+      "id": "vect-arm",
+      "name": "VECT-Arm"
+    }
+  },
+  "cycleData": {
+    "1": {
+      "cycle": 1,
+      "name": "Rebirth Cycle 1",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            {
+              "droid": "cb",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "pit",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "drk-1-probe",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            {
+              "droid": "bdx-explorer",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "2bb",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bal-core",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            {
+              "droid": "a-lt",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 6
+              }
+            },
+            {
+              "droid": "b-u4d",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 5
+              }
+            },
+            {
+              "droid": "r9",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 5
+              }
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            {
+              "droid": "arg",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 6
+              }
+            },
+            {
+              "droid": "b1-security",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 7
+              }
+            },
+            {
+              "droid": "groundmech",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 6
+              }
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            {
+              "droid": "b-u4d",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 7
+              }
+            },
+            {
+              "droid": "hov-r",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            },
+            {
+              "droid": "r9",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            {
+              "droid": "groundmech",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            },
+            {
+              "droid": "arg",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "a-lt",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            {
+              "droid": "bb",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 21
+              }
+            },
+            {
+              "droid": "b1-security",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b-u4d",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            {
+              "droid": "util-tec",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "lo",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 10
+              }
+            },
+            {
+              "droid": "hov-r",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            {
+              "droid": "groundmech",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 21
+              }
+            },
+            {
+              "droid": "r6",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "trak-r",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "requirements": [
+            {
+              "droid": "lo",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "haul-r",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "strike-orb",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "requirements": [
+            {
+              "droid": "amp-walker",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 22
+              }
+            },
+            {
+              "droid": "b1-heavy",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 22
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 15
+              }
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "requirements": [
+            {
+              "droid": "proto-roller",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 16
+              }
+            },
+            {
+              "droid": "mono-wlkr",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 14
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 14
+              }
+            }
+          ]
+        },
+        {
+          "level": 13,
+          "requirements": [
+            {
+              "droid": "r7",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 15
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 17
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 15
+              }
+            }
+          ]
+        },
+        {
+          "level": 14,
+          "requirements": [
+            {
+              "droid": "opti-strk",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 16
+              }
+            },
+            {
+              "droid": "mono-wlkr",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 16
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 17
+              }
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "requirements": [
+            {
+              "droid": "b2-rp",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 17
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "requirements": [
+            {
+              "droid": "opti-strk",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 20
+              }
+            },
+            {
+              "droid": "mono-wlkr",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            }
+          ]
+        },
+        {
+          "level": 17,
+          "requirements": [
+            {
+              "droid": "b2-rp",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 20
+              }
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "requirements": [
+            {
+              "droid": "bb9",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 24
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 20
+              }
+            },
+            {
+              "droid": "mono-wlkr",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            }
+          ]
+        },
+        {
+          "level": 19,
+          "requirements": [
+            {
+              "droid": "b2-rp",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 25
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 24
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 22
+              }
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "requirements": [
+            {
+              "droid": "r7",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            },
+            {
+              "droid": "opti-strk",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            }
+          ]
+        },
+        {
+          "level": 21,
+          "requirements": [
+            {
+              "droid": "bb",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "orb-walker",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "groundmech",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "requirements": [
+            {
+              "droid": "amp-walker",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b1-heavy",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            }
+          ]
+        },
+        {
+          "level": 23,
+          "requirements": [
+            {
+              "droid": "opti-strk",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mono-wlkr",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 24,
+          "requirements": [
+            {
+              "droid": "bb9",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mo-trak",
+              "skin": "default",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "requirements": [
+            {
+              "droid": "b2-rp",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "ig",
+              "skin": "default",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            },
+            {
+              "droid": "drft-r",
+              "skin": "gold",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            }
+          ]
+        },
+        {
+          "level": 26,
+          "requirements": [
+            {
+              "droid": "cyclens",
+              "skin": "gold",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "loadlifter",
+              "skin": "diamond",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "ric-1200",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 27,
+          "requirements": [
+            {
+              "droid": "kx",
+              "skin": "diamond",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "tri-tek",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "snow-mouse",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 28,
+          "requirements": [
+            {
+              "droid": "mo-trak",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "drft-r",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 29,
+          "requirements": [
+            {
+              "droid": "ig",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mono-wlkr",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "requirements": [
+            {
+              "droid": "cyclens",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "loadlifter",
+              "skin": "galactic",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "cycle": 2,
+      "name": "Rebirth Cycle 2",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            {
+              "droid": "mouse",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "gonk",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "id10",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            {
+              "droid": "roll-r",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "nav-ex",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "senate-hovercam",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            {
+              "droid": "r4",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 5
+              }
+            },
+            {
+              "droid": "vect-arm",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 5
+              }
+            },
+            {
+              "droid": "bdx-explorer",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 7
+              }
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            {
+              "droid": "2bb",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 6
+              }
+            },
+            {
+              "droid": "bal-core",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 6
+              }
+            },
+            {
+              "droid": "orb-walker",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 12
+              }
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            {
+              "droid": "r4",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            },
+            {
+              "droid": "vect-arm",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 10
+              }
+            },
+            {
+              "droid": "nav-ex",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 9
+              }
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            {
+              "droid": "gunrunner",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            },
+            {
+              "droid": "2bb",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bal-core",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 11
+              }
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            {
+              "droid": "roll-r",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bdx-explorer",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r2",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 10
+              }
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            {
+              "droid": "r4",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b2-super",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 10
+              }
+            },
+            {
+              "droid": "gunrunner",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            {
+              "droid": "nav-ex",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "strike-orb",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 11
+              }
+            },
+            {
+              "droid": "amp-walker",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 16
+              }
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "requirements": [
+            {
+              "droid": "vect-arm",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r2",
+              "skin": "diamond",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 12
+              }
+            },
+            {
+              "droid": "b2-super",
+              "skin": "diamond",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 13
+              }
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "requirements": [
+            {
+              "droid": "strike-orb",
+              "skin": "diamond",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 15
+              }
+            },
+            {
+              "droid": "b2-heavy",
+              "skin": "diamond",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 14
+              }
+            },
+            {
+              "droid": "bal-core",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "requirements": [
+            {
+              "droid": "orb-walker",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r2",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 15
+              }
+            }
+          ]
+        },
+        {
+          "level": 13,
+          "requirements": [
+            {
+              "droid": "b2-super",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 16
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 15
+              }
+            }
+          ]
+        },
+        {
+          "level": 14,
+          "requirements": [
+            {
+              "droid": "b2-heavy",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 17
+              }
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "requirements": [
+            {
+              "droid": "strike-orb",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 22
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "requirements": [
+            {
+              "droid": "b2-rp",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            },
+            {
+              "droid": "amp-walker",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            }
+          ]
+        },
+        {
+          "level": 17,
+          "requirements": [
+            {
+              "droid": "opti-pod",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            },
+            {
+              "droid": "mono-wlkr",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 20
+              }
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "requirements": [
+            {
+              "droid": "util-tec",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 22
+              }
+            }
+          ]
+        },
+        {
+          "level": 19,
+          "requirements": [
+            {
+              "droid": "mecha-droid",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "requirements": [
+            {
+              "droid": "mono-wlkr",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 25
+              }
+            },
+            {
+              "droid": "opti-strk",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 24
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            }
+          ]
+        },
+        {
+          "level": 21,
+          "requirements": [
+            {
+              "droid": "lo",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r6",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "haul-r",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "requirements": [
+            {
+              "droid": "sen-tri",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "strike-orb",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 23,
+          "requirements": [
+            {
+              "droid": "bb9",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 24
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 24
+              }
+            }
+          ]
+        },
+        {
+          "level": 24,
+          "requirements": [
+            {
+              "droid": "opti-strk",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "snow-mouse",
+              "skin": "default",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "requirements": [
+            {
+              "droid": "mono-wlkr",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "tri-tek",
+              "skin": "gold",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            },
+            {
+              "droid": "ric-1200",
+              "skin": "default",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 26,
+          "requirements": [
+            {
+              "droid": "kx",
+              "skin": "gold",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "drft-r",
+              "skin": "diamond",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "ig",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 27,
+          "requirements": [
+            {
+              "droid": "lep",
+              "skin": "diamond",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "loadlifter",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mo-trak",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 28,
+          "requirements": [
+            {
+              "droid": "snow-mouse",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "tri-tek",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 29,
+          "requirements": [
+            {
+              "droid": "ric",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "requirements": [
+            {
+              "droid": "kx",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "opti-strk",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "drft-r",
+              "skin": "galactic",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "cycle": 3,
+      "name": "Rebirth Cycle 3",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            {
+              "droid": "mouse",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "pit",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "gonk",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            {
+              "droid": "2bb",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r3",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 5
+              }
+            },
+            {
+              "droid": "senate-hovercam",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 5
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            {
+              "droid": "r4",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 6
+              }
+            },
+            {
+              "droid": "r5",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 6
+              }
+            },
+            {
+              "droid": "r8",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 7
+              }
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            {
+              "droid": "r9",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 7
+              }
+            },
+            {
+              "droid": "b1-battle",
+              "skin": "gold",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 7
+              }
+            },
+            {
+              "droid": "b1-security",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            {
+              "droid": "2bb",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            },
+            {
+              "droid": "r3",
+              "skin": "gold",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            },
+            {
+              "droid": "senate-hovercam",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 10
+              }
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            {
+              "droid": "bdx-explorer",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 9
+              }
+            },
+            {
+              "droid": "r4",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 9
+              }
+            },
+            {
+              "droid": "r5",
+              "skin": "diamond",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 9
+              }
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            {
+              "droid": "r8",
+              "skin": "diamond",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r9",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b1-battle",
+              "skin": "diamond",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            {
+              "droid": "b1-security",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r3",
+              "skin": "rainbow",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "2bb",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            {
+              "droid": "bdx-explorer",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r4",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r5",
+              "skin": "rainbow",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "requirements": [
+            {
+              "droid": "trak-r",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 12
+              }
+            },
+            {
+              "droid": "groundmech",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 12
+              }
+            },
+            {
+              "droid": "senate-hovercam",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "requirements": [
+            {
+              "droid": "b2-heavy",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 14
+              }
+            },
+            {
+              "droid": "b2-super",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 13
+              }
+            },
+            {
+              "droid": "util-tec",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "requirements": [
+            {
+              "droid": "trak-r",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "groundmech",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bal-core",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 13,
+          "requirements": [
+            {
+              "droid": "b2-super",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 21
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 16
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 15
+              }
+            }
+          ]
+        },
+        {
+          "level": 14,
+          "requirements": [
+            {
+              "droid": "b2-heavy",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 16
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 17
+              }
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "requirements": [
+            {
+              "droid": "strike-orb",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "requirements": [
+            {
+              "droid": "amp-walker",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            }
+          ]
+        },
+        {
+          "level": 17,
+          "requirements": [
+            {
+              "droid": "opti-pod",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 21
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            },
+            {
+              "droid": "mono-wlkr",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 20
+              }
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "requirements": [
+            {
+              "droid": "util-tec",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 24
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 25
+              }
+            }
+          ]
+        },
+        {
+          "level": 19,
+          "requirements": [
+            {
+              "droid": "mecha-droid",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 22
+              }
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "requirements": [
+            {
+              "droid": "mono-wlkr",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            },
+            {
+              "droid": "opti-strk",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            }
+          ]
+        },
+        {
+          "level": 21,
+          "requirements": [
+            {
+              "droid": "b2-super",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "opti-pod",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r2",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "requirements": [
+            {
+              "droid": "gunrunner",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "lng-shot",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 24
+              }
+            }
+          ]
+        },
+        {
+          "level": 23,
+          "requirements": [
+            {
+              "droid": "mono-wlkr",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 24,
+          "requirements": [
+            {
+              "droid": "bb9",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "ric",
+              "skin": "default",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "requirements": [
+            {
+              "droid": "proto-roller",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "loadlifter",
+              "skin": "default",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mo-trak",
+              "skin": "gold",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            }
+          ]
+        },
+        {
+          "level": 26,
+          "requirements": [
+            {
+              "droid": "lep",
+              "skin": "gold",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "tri-tek",
+              "skin": "diamond",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "snow-mouse",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 27,
+          "requirements": [
+            {
+              "droid": "ric-1200",
+              "skin": "diamond",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "ig",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            },
+            {
+              "droid": "drft-r",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            }
+          ]
+        },
+        {
+          "level": 28,
+          "requirements": [
+            {
+              "droid": "ric",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mo-trak",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 29,
+          "requirements": [
+            {
+              "droid": "ig",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "opti-strk",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "requirements": [
+            {
+              "droid": "lep",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "drft-r",
+              "skin": "galactic",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "cycle": 4,
+      "name": "Rebirth Cycle 4",
+      "levels": [
+        {
+          "level": 1,
+          "requirements": [
+            {
+              "droid": "id10",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "pit",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "drk-1-probe",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 2,
+          "requirements": [
+            {
+              "droid": "r3",
+              "skin": "default",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 5
+              }
+            },
+            {
+              "droid": "2bb",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 5
+              }
+            },
+            {
+              "droid": "senate-hovercam",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 5
+              }
+            }
+          ]
+        },
+        {
+          "level": 3,
+          "requirements": [
+            {
+              "droid": "r4",
+              "skin": "default",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 6
+              }
+            },
+            {
+              "droid": "r5",
+              "skin": "gold",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 6
+              }
+            },
+            {
+              "droid": "r8",
+              "skin": "gold",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 7
+              }
+            }
+          ]
+        },
+        {
+          "level": 4,
+          "requirements": [
+            {
+              "droid": "r9",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 7
+              }
+            },
+            {
+              "droid": "b1-battle",
+              "skin": "gold",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 7
+              }
+            },
+            {
+              "droid": "b1-security",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            }
+          ]
+        },
+        {
+          "level": 5,
+          "requirements": [
+            {
+              "droid": "2bb",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            },
+            {
+              "droid": "r3",
+              "skin": "gold",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 8
+              }
+            },
+            {
+              "droid": "senate-hovercam",
+              "skin": "gold",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 10
+              }
+            }
+          ]
+        },
+        {
+          "level": 6,
+          "requirements": [
+            {
+              "droid": "bdx-explorer",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 9
+              }
+            },
+            {
+              "droid": "r4",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 9
+              }
+            },
+            {
+              "droid": "r5",
+              "skin": "diamond",
+              "rarity": "common",
+              "action": {
+                "type": "credits",
+                "amount": 9
+              }
+            }
+          ]
+        },
+        {
+          "level": 7,
+          "requirements": [
+            {
+              "droid": "r8",
+              "skin": "diamond",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r9",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b1-battle",
+              "skin": "diamond",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 8,
+          "requirements": [
+            {
+              "droid": "b1-security",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r3",
+              "skin": "rainbow",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "2bb",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 9,
+          "requirements": [
+            {
+              "droid": "bdx-explorer",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r4",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r5",
+              "skin": "rainbow",
+              "rarity": "common",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 10,
+          "requirements": [
+            {
+              "droid": "trak-r",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 14
+              }
+            },
+            {
+              "droid": "groundmech",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 12
+              }
+            },
+            {
+              "droid": "senate-hovercam",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "requirements": [
+            {
+              "droid": "b2-heavy",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 15
+              }
+            },
+            {
+              "droid": "b2-super",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 13
+              }
+            },
+            {
+              "droid": "util-tec",
+              "skin": "default",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 16
+              }
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "requirements": [
+            {
+              "droid": "bal-core",
+              "skin": "rainbow",
+              "rarity": "rare",
+              "action": {
+                "type": "credits",
+                "amount": 14
+              }
+            },
+            {
+              "droid": "groundmech",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 14
+              }
+            },
+            {
+              "droid": "trak-r",
+              "skin": "gold",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 14
+              }
+            }
+          ]
+        },
+        {
+          "level": 13,
+          "requirements": [
+            {
+              "droid": "b2-super",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 15
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 17
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 24
+              }
+            }
+          ]
+        },
+        {
+          "level": 14,
+          "requirements": [
+            {
+              "droid": "bal-core",
+              "skin": "diamond",
+              "rarity": "rare",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "groundmech",
+              "skin": "diamond",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 21
+              }
+            },
+            {
+              "droid": "trak-r",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 15,
+          "requirements": [
+            {
+              "droid": "b2-heavy",
+              "skin": "diamond",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b2-super",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "credits",
+                "amount": 22
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "requirements": [
+            {
+              "droid": "util-tec",
+              "skin": "rainbow",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 18
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            }
+          ]
+        },
+        {
+          "level": 17,
+          "requirements": [
+            {
+              "droid": "opti-strk",
+              "skin": "default",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 20
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            },
+            {
+              "droid": "mecha-droid",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            }
+          ]
+        },
+        {
+          "level": 18,
+          "requirements": [
+            {
+              "droid": "b2-rp",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "gold",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 19
+              }
+            }
+          ]
+        },
+        {
+          "level": 19,
+          "requirements": [
+            {
+              "droid": "mecha-droid",
+              "skin": "diamond",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 24
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "requirements": [
+            {
+              "droid": "mono-wlkr",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            },
+            {
+              "droid": "opti-strk",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 25
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "rainbow",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 23
+              }
+            }
+          ]
+        },
+        {
+          "level": 21,
+          "requirements": [
+            {
+              "droid": "haul-r",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "groundmech",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "amp-walker",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 22,
+          "requirements": [
+            {
+              "droid": "gunrunner",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "strike-orb",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b2-super",
+              "skin": "beskar",
+              "rarity": "epic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 23,
+          "requirements": [
+            {
+              "droid": "mono-wlkr",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "cyclo-grav",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "b2-rp",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 24,
+          "requirements": [
+            {
+              "droid": "mecha-droid",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "proto-roller",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mo-trak",
+              "skin": "default",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 26
+              }
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "requirements": [
+            {
+              "droid": "opti-strk",
+              "skin": "beskar",
+              "rarity": "legendary",
+              "action": {
+                "type": "credits",
+                "amount": 28
+              }
+            },
+            {
+              "droid": "tri-tek",
+              "skin": "default",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 29
+              }
+            },
+            {
+              "droid": "drft-r",
+              "skin": "gold",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 26,
+          "requirements": [
+            {
+              "droid": "cyclens",
+              "skin": "gold",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "lep",
+              "skin": "diamond",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mo-trak",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 27,
+          "requirements": [
+            {
+              "droid": "ric-1200",
+              "skin": "diamond",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "snow-mouse",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "loadlifter",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 28,
+          "requirements": [
+            {
+              "droid": "ig",
+              "skin": "rainbow",
+              "rarity": "mythic",
+              "action": {
+                "type": "credits",
+                "amount": 30
+              }
+            },
+            {
+              "droid": "kx",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "opti-strk",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 29,
+          "requirements": [
+            {
+              "droid": "tri-tek",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "r7",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "bb9",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "requirements": [
+            {
+              "droid": "cyclens",
+              "skin": "beskar",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "mono-wlkr",
+              "skin": "galactic",
+              "rarity": "legendary",
+              "action": {
+                "type": "sell"
+              }
+            },
+            {
+              "droid": "ig",
+              "skin": "galactic",
+              "rarity": "mythic",
+              "action": {
+                "type": "sell"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+};

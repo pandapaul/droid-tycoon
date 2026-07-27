@@ -1,0 +1,113 @@
+{
+  "description": "Shared rebirth bonuses starting at level 13 (identical across all cycles).",
+  "levels": [
+    {
+      "level": 13,
+      "power": 16,
+      "rebirthPct": 32,
+      "xpPct": 160
+    },
+    {
+      "level": 14,
+      "power": 22,
+      "rebirthPct": 44,
+      "xpPct": 220
+    },
+    {
+      "level": 15,
+      "power": 29,
+      "rebirthPct": 58,
+      "xpPct": 290
+    },
+    {
+      "level": 16,
+      "power": 37,
+      "rebirthPct": 74,
+      "xpPct": 370
+    },
+    {
+      "level": 17,
+      "power": 46,
+      "rebirthPct": 92,
+      "xpPct": 460
+    },
+    {
+      "level": 18,
+      "power": 56,
+      "rebirthPct": 112,
+      "xpPct": 560
+    },
+    {
+      "level": 19,
+      "power": 67,
+      "rebirthPct": 134,
+      "xpPct": 670
+    },
+    {
+      "level": 20,
+      "power": 79,
+      "rebirthPct": 158,
+      "xpPct": 790
+    },
+    {
+      "level": 21,
+      "power": 92,
+      "rebirthPct": 184,
+      "xpPct": 920
+    },
+    {
+      "level": 22,
+      "power": 106,
+      "rebirthPct": 212,
+      "xpPct": 1060
+    },
+    {
+      "level": 23,
+      "power": 121,
+      "rebirthPct": 242,
+      "xpPct": 1210
+    },
+    {
+      "level": 24,
+      "power": 137,
+      "rebirthPct": 274,
+      "xpPct": 1370
+    },
+    {
+      "level": 25,
+      "power": 154,
+      "rebirthPct": 308,
+      "xpPct": 1540
+    },
+    {
+      "level": 26,
+      "power": 172,
+      "rebirthPct": 344,
+      "xpPct": 1720
+    },
+    {
+      "level": 27,
+      "power": 191,
+      "rebirthPct": 382,
+      "xpPct": 1910
+    },
+    {
+      "level": 28,
+      "power": 211,
+      "rebirthPct": 422,
+      "xpPct": 2110
+    },
+    {
+      "level": 29,
+      "power": 232,
+      "rebirthPct": 464,
+      "xpPct": 2320
+    },
+    {
+      "level": 30,
+      "power": 254,
+      "rebirthPct": 508,
+      "xpPct": 2540
+    }
+  ]
+}
