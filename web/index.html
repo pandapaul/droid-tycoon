@@ -511,12 +511,17 @@
       openDroidId = null;
       dossierEl.hidden = true;
       dossierEl.innerHTML = '';
-      if (wasOpen) syncUrl();
+      if (wasOpen) {
+        syncUrl();
+        renderSearch();
+      }
     };
 
     const openDossier = (droidId, { scroll = true } = {}) => {
       const already = openDroidId === droidId && !dossierEl.hidden;
       openDroidId = droidId;
+      resultsEl.hidden = true;
+      resultsEl.innerHTML = '';
       const hits = collectAppearances(droidId);
       const skins = skinProgression(hits);
       const byCycle = { 1: [], 2: [], 3: [], 4: [] };
@@ -660,7 +665,8 @@
     const renderSearch = () => {
       const qRaw = searchEl.value.trim();
       const q = norm(qRaw);
-      if (!q) {
+      // Droid Data owns the focus slot — don't show hits while it's open.
+      if (!q || openDroidId) {
         resultsEl.hidden = true;
         resultsEl.innerHTML = '';
         return;
@@ -725,20 +731,20 @@
       searchCycleEl.value = ['1', '2', '3', '4'].includes(filter) ? filter : 'all';
       upcomingCount = p.get('expand') === '1' ? 30 : 3;
       setLevel(p.get('level') || 1, { refreshView: false });
+
+      const validDroid = droid && D.droids[droid] ? droid : null;
+      openDroidId = validDroid;
+      if (!validDroid) {
+        dossierEl.hidden = true;
+        dossierEl.innerHTML = '';
+      }
+
       renderCurrent();
       renderUpcoming();
       renderSearch();
-      if (droid && D.droids[droid]) {
-        openDroidId = null;
-        applyingUrl = false;
-        openDossier(droid, { scroll: false });
-      } else {
-        openDroidId = null;
-        dossierEl.hidden = true;
-        dossierEl.innerHTML = '';
-        applyingUrl = false;
-        syncUrl();
-      }
+      applyingUrl = false;
+      if (validDroid) openDossier(validDroid, { scroll: false });
+      else syncUrl();
     };
 
     cycleEl.addEventListener('change', () => {
@@ -768,6 +774,12 @@
       }
     });
     searchEl.addEventListener('input', () => {
+      // Typing search takes the focus slot back from Droid Data.
+      if (openDroidId) {
+        openDroidId = null;
+        dossierEl.hidden = true;
+        dossierEl.innerHTML = '';
+      }
       renderSearch();
       syncUrl();
     });
