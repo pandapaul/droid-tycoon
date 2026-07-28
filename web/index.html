@@ -12,7 +12,12 @@
       --muted: #9aa7b5;
       --accent: #e8a54b;
       --rule: #2a3542;
-      --done: #3d7a5a;
+      --skin-default: #8b949e;
+      --skin-gold: #e0b24a;
+      --skin-diamond: #5ec8e8;
+      --skin-rainbow: #d48cff;
+      --skin-beskar: #e8eef6;
+      --skin-galactic: #c084fc;
     }
     * { box-sizing: border-box; }
     body {
@@ -55,7 +60,7 @@
     @media (max-width: 560px) {
       .controls { grid-template-columns: 1fr; }
     }
-    label {
+    label, .field {
       display: flex;
       flex-direction: column;
       gap: 0.35rem;
@@ -64,7 +69,10 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
-    select, input[type="number"], input[type="search"] {
+    .field-label {
+      display: block;
+    }
+    select, input[type="number"], input[type="search"], input[type="text"] {
       font: inherit;
       font-size: 1rem;
       text-transform: none;
@@ -75,8 +83,65 @@
       border-radius: 6px;
       padding: 0.5rem 0.65rem;
     }
-    input[type="range"] { width: 100%; }
-    .search-row { grid-column: 1 / -1; }
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding-right: 2.25rem;
+      background-color: var(--bg);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath stroke='%239aa7b5' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M1.5 1.5L6 6l4.5-4.5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 0.75rem 0.5rem;
+    }
+    .stepper {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+    }
+    .stepper button {
+      width: 2.5rem;
+      font: inherit;
+      font-size: 1.25rem;
+      line-height: 1;
+      color: var(--ink);
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      cursor: pointer;
+      padding: 0;
+    }
+    .stepper button:hover:not(:disabled) { background: #243040; }
+    .stepper button:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+    }
+    .stepper button:first-child { border-radius: 6px 0 0 6px; }
+    .stepper button:last-child { border-radius: 0 6px 6px 0; }
+    .stepper input {
+      width: 4rem;
+      text-align: center;
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
+      font-variant-numeric: tabular-nums;
+      -moz-appearance: textfield;
+    }
+    .stepper input::-webkit-outer-spin-button,
+    .stepper input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    .search-row {
+      grid-column: 1 / -1;
+      display: grid;
+      gap: 0.65rem;
+      grid-template-columns: 1fr minmax(7.5rem, 9rem);
+      align-items: end;
+    }
+    @media (max-width: 560px) {
+      .search-row { grid-template-columns: 1fr; }
+    }
+    .search-row > label { min-width: 0; }
     .card {
       background: var(--panel);
       border: 1px solid var(--rule);
@@ -88,6 +153,24 @@
       margin: 0 0 0.35rem;
       font-size: 1.1rem;
     }
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .card-head h2 { margin: 0; }
+    .icon-btn {
+      font: inherit;
+      font-size: 1.25rem;
+      line-height: 1;
+      color: var(--muted);
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      padding: 0.15rem 0.35rem;
+    }
+    .icon-btn:hover { color: var(--ink); }
     .cash {
       color: var(--accent);
       font-weight: 650;
@@ -97,6 +180,16 @@
       color: var(--muted);
       font-size: 0.85rem;
       margin: 0.35rem 0 0.75rem;
+    }
+    .legend {
+      margin: 0.75rem 0 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+    .summary {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin: 0.35rem 0 0.85rem;
     }
     .req-list {
       list-style: none;
@@ -115,32 +208,38 @@
       border-radius: 6px;
       border: 1px solid var(--rule);
     }
-    .req-list li.checked {
-      border-color: var(--done);
-      opacity: 0.75;
-    }
-    .req-meta { color: var(--muted); font-size: 0.85rem; }
     .req-action {
       white-space: nowrap;
       font-variant-numeric: tabular-nums;
       color: var(--accent);
+      font-size: 0.9rem;
     }
-    .mark {
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-      text-transform: none;
-      letter-spacing: 0;
-      margin-top: 0.75rem;
+    .droid-link {
+      font: inherit;
+      font-weight: 650;
+      color: var(--ink);
+      background: transparent;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      text-underline-offset: 0.15em;
     }
-    .upcoming h3, .results h3 {
+    .droid-link:hover {
+      color: var(--accent);
+      text-decoration-color: var(--accent);
+    }
+    .upcoming h3, .results h3, .dossier h3 {
       margin: 0 0 0.5rem;
       font-size: 0.95rem;
       color: var(--muted);
       text-transform: uppercase;
       letter-spacing: 0.05em;
+    }
+    .dossier h2 {
+      margin: 0;
+      font-size: 1.2rem;
     }
     .mini {
       font-size: 0.88rem;
@@ -148,12 +247,42 @@
       border-bottom: 1px solid var(--rule);
     }
     .mini:last-child { border-bottom: 0; }
+    .mini-jump {
+      display: block;
+      width: 100%;
+      text-align: left;
+      font: inherit;
+      color: inherit;
+      background: transparent;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+    .mini-jump:hover strong { color: var(--accent); }
     .mini strong { color: var(--accent); }
+    .show-more-wrap {
+      margin-top: 0.65rem;
+      padding-top: 0.35rem;
+    }
+    .show-more {
+      font: inherit;
+      font-size: 0.88rem;
+      color: var(--accent);
+      background: transparent;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 0.4rem 0.75rem;
+      cursor: pointer;
+    }
+    .show-more:hover { border-color: var(--accent); }
     .hit {
       padding: 0.55rem 0;
       border-bottom: 1px solid var(--rule);
       font-size: 0.9rem;
+      display: grid;
+      gap: 0.2rem;
     }
+    .hit-detail { color: var(--ink); }
     .hit-jump {
       display: block;
       width: 100%;
@@ -166,7 +295,60 @@
       cursor: pointer;
     }
     .hit-jump:hover strong { color: var(--accent); }
+    .gate-group {
+      margin-bottom: 0.85rem;
+    }
+    .gate-group:last-child { margin-bottom: 0; }
+    .gate-group h4 {
+      margin: 0 0 0.35rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .gate-row {
+      display: block;
+      width: 100%;
+      text-align: left;
+      font: inherit;
+      font-size: 0.9rem;
+      color: inherit;
+      background: var(--bg);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 0.5rem 0.65rem;
+      margin-bottom: 0.35rem;
+      cursor: pointer;
+    }
+    .gate-row:hover { border-color: var(--accent); }
     .empty { color: var(--muted); font-size: 0.9rem; }
+    .skin {
+      font-weight: 650;
+    }
+    .skin-default { color: var(--skin-default); font-weight: 500; }
+    .skin-gold { color: var(--skin-gold); }
+    .skin-diamond { color: var(--skin-diamond); }
+    .skin-rainbow {
+      background: linear-gradient(90deg, #ff6b6b, #e0b24a, #5ec8e8, #d48cff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .skin-beskar {
+      background: linear-gradient(90deg, #8a929c 0%, #e8eef6 40%, #a8b0bc 55%, #f5f7fa 75%, #7a8490 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .skin-galactic {
+      background: linear-gradient(90deg, #a855f7, #e879f9, #818cf8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
@@ -187,17 +369,33 @@
           <option value="4">Cycle 4</option>
         </select>
       </label>
-      <label>
-        Level <span id="levelLabel"></span>
-        <input id="level" type="range" min="1" max="30" value="1" />
-        <input id="levelNum" type="number" min="1" max="30" value="1" />
-      </label>
-      <label class="search-row">
-        Find a droid
-        <input id="search" type="search" placeholder="e.g. Mecha-Droid" autocomplete="off" />
-      </label>
+      <div class="field">
+        <span class="field-label" id="levelFieldLabel">Level</span>
+        <div class="stepper" role="group" aria-labelledby="levelFieldLabel">
+          <button type="button" id="levelDown" aria-label="Previous level">−</button>
+          <input id="levelNum" type="number" min="1" max="30" value="1" inputmode="numeric" aria-label="Level number" />
+          <button type="button" id="levelUp" aria-label="Next level">+</button>
+        </div>
+      </div>
+      <div class="search-row">
+        <label>
+          Find a droid
+          <input id="search" type="search" placeholder="e.g. Mecha-Droid" autocomplete="off" />
+        </label>
+        <label>
+          In cycle
+          <select id="searchCycle">
+            <option value="all">Any cycle</option>
+            <option value="1">Cycle 1</option>
+            <option value="2">Cycle 2</option>
+            <option value="3">Cycle 3</option>
+            <option value="4">Cycle 4</option>
+          </select>
+        </label>
+      </div>
     </div>
 
+    <div id="dossier" class="card dossier" hidden></div>
     <div id="results" class="card results" hidden></div>
     <div id="current" class="card"></div>
     <div id="upcoming" class="card upcoming"></div>
@@ -206,49 +404,179 @@
   <script src="data.js"></script>
   <script>
     const D = window.REBIRTH_DATA;
-    const LS_KEY = 'droid-tycoon-rebirth-checks';
-
-    const loadChecks = () => {
-      try { return JSON.parse(localStorage.getItem(LS_KEY) || '{}'); }
-      catch { return {}; }
-    };
-    const saveChecks = (obj) => localStorage.setItem(LS_KEY, JSON.stringify(obj));
-    const checkKey = (c, l) => `${c}:${l}`;
+    const SKIN_ORDER = ['default', 'gold', 'diamond', 'rainbow', 'beskar', 'galactic'];
 
     const titleCase = (s) => s.charAt(0).toUpperCase() + s.slice(1);
     const droidName = (id) => D.droids[id]?.name || id;
-    const fmtAction = (a) => a.type === 'sell' ? 'SELL' : a.amount;
-    const fmtReq = (req) =>
-      `${droidName(req.droid)} · ${titleCase(req.skin)} ${titleCase(req.rarity)}`;
-    /** Normalize for loose matching: "Mecha Droid", "mecha-droid", "MECHA" all work. */
+    const fmtAction = (a) => a.type === 'sell' ? 'Safe to sell' : `Needed at L${a.level}`;
+    const skinSpan = (skin) =>
+      `<span class="skin skin-${skin}">${titleCase(skin)}</span>`;
+    const fmtSkinRarity = (req) => `${skinSpan(req.skin)} ${titleCase(req.rarity)}`;
     const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '');
 
     const cycleEl = document.getElementById('cycle');
-    const levelEl = document.getElementById('level');
     const levelNum = document.getElementById('levelNum');
-    const levelLabel = document.getElementById('levelLabel');
+    const levelDown = document.getElementById('levelDown');
+    const levelUp = document.getElementById('levelUp');
     const searchEl = document.getElementById('search');
+    const searchCycleEl = document.getElementById('searchCycle');
     const currentEl = document.getElementById('current');
     const upcomingEl = document.getElementById('upcoming');
     const resultsEl = document.getElementById('results');
+    const dossierEl = document.getElementById('dossier');
 
-    const syncLevelInputs = (v) => {
-      levelEl.value = v;
-      levelNum.value = v;
-      levelLabel.textContent = `(${v})`;
+    let upcomingCount = 3;
+    let openDroidId = null;
+    let applyingUrl = false;
+
+    const clampLevel = (v) => Math.max(1, Math.min(30, Number(v) || 1));
+
+    const getLevelValue = () => clampLevel(levelNum.value);
+
+    const syncUrl = () => {
+      if (applyingUrl) return;
+      const p = new URLSearchParams();
+      p.set('cycle', cycleEl.value);
+      p.set('level', String(getLevelValue()));
+      const q = searchEl.value.trim();
+      if (q) p.set('q', q);
+      if (searchCycleEl.value !== 'all') p.set('filter', searchCycleEl.value);
+      if (openDroidId) p.set('droid', openDroidId);
+      if (upcomingCount > 3) p.set('expand', '1');
+      const qs = p.toString();
+      const next = `${location.pathname}?${qs}`;
+      if (`${location.pathname}${location.search}` !== next || location.hash) {
+        history.replaceState(null, '', next);
+      }
+    };
+
+    const setLevel = (v, { refreshView = true } = {}) => {
+      const n = clampLevel(v);
+      levelNum.value = String(n);
+      levelDown.disabled = n <= 1;
+      levelUp.disabled = n >= 30;
+      if (refreshView) {
+        upcomingCount = 3;
+        renderCurrent();
+        renderUpcoming();
+        syncUrl();
+      }
+    };
+
+    const jumpTo = (cycle, level) => {
+      cycleEl.value = String(cycle);
+      setLevel(level);
+      currentEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
     };
 
     const getLevel = (cycle, level) =>
       D.cycleData[String(cycle)].levels.find((x) => x.level === level);
 
+    const droidButton = (id, extraClass = '') =>
+      `<button type="button" class="droid-link ${extraClass}" data-droid="${id}">${droidName(id)}</button>`;
+
+    const collectAppearances = (droidId) => {
+      const hits = [];
+      for (let c = 1; c <= 4; c++) {
+        for (const lvl of D.cycleData[String(c)].levels) {
+          for (const req of lvl.requirements) {
+            if (req.droid === droidId) {
+              hits.push({
+                c,
+                level: lvl.level,
+                cost: D.costs[String(lvl.level)].display,
+                req,
+              });
+            }
+          }
+        }
+      }
+      return hits;
+    };
+
+    const skinProgression = (hits) => {
+      const seen = new Set();
+      const ordered = [];
+      for (const skin of SKIN_ORDER) {
+        if (hits.some((h) => h.req.skin === skin) && !seen.has(skin)) {
+          seen.add(skin);
+          ordered.push(skinSpan(skin));
+        }
+      }
+      return ordered;
+    };
+
+    const closeDossier = () => {
+      const wasOpen = !!openDroidId;
+      openDroidId = null;
+      dossierEl.hidden = true;
+      dossierEl.innerHTML = '';
+      if (wasOpen) syncUrl();
+    };
+
+    const openDossier = (droidId, { scroll = true } = {}) => {
+      const already = openDroidId === droidId && !dossierEl.hidden;
+      openDroidId = droidId;
+      const hits = collectAppearances(droidId);
+      const skins = skinProgression(hits);
+      const byCycle = { 1: [], 2: [], 3: [], 4: [] };
+      for (const h of hits) byCycle[h.c].push(h);
+
+      const groups = [1, 2, 3, 4]
+        .filter((c) => byCycle[c].length)
+        .map((c) => `
+          <div class="gate-group">
+            <h4>Cycle ${c} · ${byCycle[c].length} gate${byCycle[c].length === 1 ? '' : 's'}</h4>
+            ${byCycle[c].map((h) => `
+              <button type="button" class="gate-row" data-cycle="${h.c}" data-level="${h.level}">
+                L${h.level} · ${h.cost} · ${fmtSkinRarity(h.req)} · ${fmtAction(h.req.action)}
+              </button>
+            `).join('')}
+          </div>
+        `).join('');
+
+      dossierEl.hidden = false;
+      dossierEl.innerHTML = `
+        <div class="card-head">
+          <div>
+            <h3>Droid dossier</h3>
+            <h2>${droidName(droidId)}</h2>
+          </div>
+          <button type="button" class="icon-btn" id="dossierClose" aria-label="Close dossier">×</button>
+        </div>
+        <p class="summary">
+          ${hits.length} rebirth gate${hits.length === 1 ? '' : 's'}
+          ${skins.length ? ` · Skins: ${skins.join(' → ')}` : ''}
+        </p>
+        ${groups || '<p class="empty">No rebirth gates found.</p>'}
+      `;
+
+      dossierEl.querySelector('#dossierClose').addEventListener('click', () => closeDossier());
+      dossierEl.querySelectorAll('.gate-row').forEach((btn) => {
+        btn.addEventListener('click', () => jumpTo(btn.dataset.cycle, btn.dataset.level));
+      });
+
+      syncUrl();
+      if (scroll && !already) {
+        dossierEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+
+    const bindDroidLinks = (root) => {
+      root.querySelectorAll('[data-droid]').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openDossier(btn.dataset.droid);
+        });
+      });
+    };
+
     const renderCurrent = () => {
       const c = Number(cycleEl.value);
-      const l = Number(levelEl.value);
+      const l = getLevelValue();
       const lvl = getLevel(c, l);
       const cost = D.costs[String(l)];
       const bonus = D.bonuses[String(l)];
-      const checks = loadChecks();
-      const done = !!checks[checkKey(c, l)];
 
       currentEl.innerHTML = `
         <h2>Cycle ${c} · Level ${l}</h2>
@@ -256,41 +584,71 @@
         ${bonus ? `<div class="bonus">Bonuses: ${bonus.power} power · ${bonus.rebirthPct}% rebirth · ${bonus.xpPct}% XP</div>` : ''}
         <ul class="req-list">
           ${lvl.requirements.map((req) => `
-            <li class="${done ? 'checked' : ''}">
-              <span>${fmtReq(req)}<div class="req-meta">${req.droid}</div></span>
+            <li>
+              <span>${droidButton(req.droid)} · ${fmtSkinRarity(req)}</span>
               <span class="req-action">${fmtAction(req.action)}</span>
             </li>
           `).join('')}
         </ul>
-        <label class="mark">
-          <input type="checkbox" id="doneBox" ${done ? 'checked' : ''} />
-          Mark level complete (saved on this device)
-        </label>
+        <p class="legend">Right-hand tip from the rebirth sheet: safe to sell, or the next level that needs this droid.</p>
       `;
-      document.getElementById('doneBox').addEventListener('change', (e) => {
-        const next = loadChecks();
-        if (e.target.checked) next[checkKey(c, l)] = true;
-        else delete next[checkKey(c, l)];
-        saveChecks(next);
-        renderCurrent();
-        renderUpcoming();
-      });
+      bindDroidLinks(currentEl);
     };
 
     const renderUpcoming = () => {
       const c = Number(cycleEl.value);
-      const l = Number(levelEl.value);
-      const checks = loadChecks();
-      const next = [];
-      for (let n = l + 1; n <= Math.min(30, l + 3); n++) next.push(n);
-      upcomingEl.innerHTML = `<h3>Next levels</h3>` + (next.length ? next.map((n) => {
-        const lvl = getLevel(c, n);
-        const cost = D.costs[String(n)];
-        const done = checks[checkKey(c, n)] ? ' ✓' : '';
-        return `<div class="mini"><strong>L${n}</strong> ${cost.display}${done}<br/>${
-          lvl.requirements.map((r) => `${droidName(r.droid)} (${titleCase(r.skin)})`).join(' · ')
-        }</div>`;
-      }).join('') : `<p class="empty">You're at the top of the cycle.</p>`);
+      const l = getLevelValue();
+      const remaining = [];
+      for (let n = l + 1; n <= 30; n++) remaining.push(n);
+      const shown = remaining.slice(0, upcomingCount);
+      const fullyExpanded = remaining.length > 0 && upcomingCount >= remaining.length;
+
+      let body;
+      if (!remaining.length) {
+        body = `<p class="empty">You're at the top of the cycle.</p>`;
+      } else {
+        body = shown.map((n) => {
+          const lvl = getLevel(c, n);
+          const cost = D.costs[String(n)];
+          const droids = lvl.requirements.map((r) =>
+            `${droidButton(r.droid)} (${skinSpan(r.skin)})`
+          ).join(' · ');
+          return `
+            <div class="mini">
+              <button type="button" class="mini-jump" data-cycle="${c}" data-level="${n}">
+                <strong>L${n}</strong> ${cost.display}
+              </button>
+              <div>${droids}</div>
+            </div>
+          `;
+        }).join('');
+
+        if (remaining.length > 3) {
+          const label = fullyExpanded
+            ? 'Show less'
+            : `Show all (${remaining.length - upcomingCount} more)`;
+          body += `
+            <div class="show-more-wrap">
+              <button type="button" class="show-more" id="upcomingMore">${label}</button>
+            </div>
+          `;
+        }
+      }
+
+      upcomingEl.innerHTML = `<h3>Next levels</h3>${body}`;
+      bindDroidLinks(upcomingEl);
+      upcomingEl.querySelectorAll('.mini-jump').forEach((btn) => {
+        btn.addEventListener('click', () => jumpTo(btn.dataset.cycle, btn.dataset.level));
+      });
+      const moreBtn = upcomingEl.querySelector('#upcomingMore');
+      if (moreBtn) {
+        moreBtn.addEventListener('click', () => {
+          if (fullyExpanded) upcomingCount = 3;
+          else upcomingCount = remaining.length;
+          renderUpcoming();
+          syncUrl();
+        });
+      }
     };
 
     const renderSearch = () => {
@@ -301,8 +659,10 @@
         resultsEl.innerHTML = '';
         return;
       }
+      const cycleFilter = searchCycleEl.value;
       const hits = [];
       for (let c = 1; c <= 4; c++) {
+        if (cycleFilter !== 'all' && String(c) !== cycleFilter) continue;
         for (const lvl of D.cycleData[String(c)].levels) {
           for (const req of lvl.requirements) {
             const name = norm(droidName(req.droid));
@@ -318,18 +678,16 @@
         (hits.length ? hits.map((h) => `
           <div class="hit">
             <button type="button" class="hit-jump" data-cycle="${h.c}" data-level="${h.level}">
-              <strong>C${h.c} L${h.level}</strong> (${h.cost}) —
-              ${fmtReq(h.req)} · ${fmtAction(h.req.action)}
+              <strong>C${h.c} L${h.level}</strong> (${h.cost})
             </button>
+            <span class="hit-detail">
+              ${droidButton(h.req.droid)} · ${fmtSkinRarity(h.req)} · ${fmtAction(h.req.action)}
+            </span>
           </div>
         `).join('') : `<p class="empty">No matches for “${qRaw}”.</p>`);
+      bindDroidLinks(resultsEl);
       resultsEl.querySelectorAll('.hit-jump').forEach((btn) => {
-        btn.addEventListener('click', () => {
-          cycleEl.value = btn.dataset.cycle;
-          syncLevelInputs(btn.dataset.level);
-          refresh();
-          currentEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
+        btn.addEventListener('click', () => jumpTo(btn.dataset.cycle, btn.dataset.level));
       });
     };
 
@@ -337,26 +695,83 @@
       renderCurrent();
       renderUpcoming();
       renderSearch();
+      if (openDroidId) openDossier(openDroidId, { scroll: false });
+      syncUrl();
     };
 
-    cycleEl.addEventListener('change', refresh);
-    levelEl.addEventListener('input', () => {
-      syncLevelInputs(levelEl.value);
-      refresh();
-    });
-    levelNum.addEventListener('change', () => {
-      let v = Math.max(1, Math.min(30, Number(levelNum.value) || 1));
-      syncLevelInputs(v);
-      refresh();
-    });
-    searchEl.addEventListener('input', renderSearch);
+    const applyUrl = () => {
+      applyingUrl = true;
+      const p = new URLSearchParams(location.search);
+      let droid = p.get('droid');
+      const hashMatch = location.hash.match(/^#droid=(.+)$/);
+      if (!droid && hashMatch) droid = decodeURIComponent(hashMatch[1]);
 
-    // Restore last view
-    const params = new URLSearchParams(location.search);
-    if (params.get('cycle')) cycleEl.value = params.get('cycle');
-    if (params.get('level')) syncLevelInputs(params.get('level'));
-    else syncLevelInputs(1);
-    refresh();
+      if (p.get('cycle') && ['1', '2', '3', '4'].includes(p.get('cycle'))) {
+        cycleEl.value = p.get('cycle');
+      }
+      searchEl.value = p.get('q') || '';
+      const filter = p.get('filter');
+      searchCycleEl.value = ['1', '2', '3', '4'].includes(filter) ? filter : 'all';
+      upcomingCount = p.get('expand') === '1' ? 30 : 3;
+      setLevel(p.get('level') || 1, { refreshView: false });
+      renderCurrent();
+      renderUpcoming();
+      renderSearch();
+      if (droid && D.droids[droid]) {
+        openDroidId = null;
+        applyingUrl = false;
+        openDossier(droid, { scroll: false });
+      } else {
+        openDroidId = null;
+        dossierEl.hidden = true;
+        dossierEl.innerHTML = '';
+        applyingUrl = false;
+        syncUrl();
+      }
+    };
+
+    cycleEl.addEventListener('change', () => {
+      upcomingCount = 3;
+      refresh();
+    });
+    levelDown.addEventListener('click', () => {
+      setLevel(getLevelValue() - 1);
+      levelDown.blur();
+    });
+    levelUp.addEventListener('click', () => {
+      setLevel(getLevelValue() + 1);
+      levelUp.blur();
+    });
+    levelNum.addEventListener('change', () => setLevel(levelNum.value));
+    levelNum.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        setLevel(getLevelValue() + 1);
+      } else if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        setLevel(getLevelValue() - 1);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        setLevel(levelNum.value);
+        levelNum.blur();
+      }
+    });
+    searchEl.addEventListener('input', () => {
+      renderSearch();
+      syncUrl();
+    });
+    searchCycleEl.addEventListener('change', () => {
+      renderSearch();
+      syncUrl();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && openDroidId) closeDossier();
+    });
+
+    window.addEventListener('popstate', applyUrl);
+
+    applyUrl();
   </script>
 </body>
 </html>

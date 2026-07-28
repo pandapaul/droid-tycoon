@@ -9,12 +9,12 @@
       --ink: #1a1a1a;
       --muted: #555;
       --rule: #ccc;
-      --skin-default: #444;
+      --skin-default: #6b7280;
       --skin-gold: #9a6b00;
       --skin-diamond: #0a6e8a;
       --skin-rainbow: #7a2d8a;
-      --skin-beskar: #3d3d3d;
-      --skin-galactic: #0b5c3b;
+      --skin-beskar: #1f2937;
+      --skin-galactic: #7c3aed;
     }
     * { box-sizing: border-box; }
     body {
@@ -138,8 +138,8 @@
       const skin = req.skin.charAt(0).toUpperCase() + req.skin.slice(1);
       const rarity = req.rarity.charAt(0).toUpperCase() + req.rarity.slice(1);
       const action = req.action.type === 'sell'
-        ? 'SELL'
-        : String(req.action.amount);
+        ? 'safe to sell'
+        : `next L${req.action.level}`;
       return `<span class="req"><span class="${skinClass(req.skin)}">${name}</span> · ${skin} ${rarity} <span class="action">(${action})</span></span>`;
     };
     const fmtBonus = (lvl) => {
@@ -182,7 +182,7 @@
           </thead>
           <tbody>${rows}</tbody>
         </table>
-        <p class="legend">Skins: Default · Gold · Diamond · Rainbow · Beskar · Galactic. Action badge: SELL or chart value.</p>
+        <p class="legend">Skins: Default · Gold · Diamond · Rainbow · Beskar · Galactic. Tip: safe to sell, or next level that needs this droid.</p>
       `;
       root.appendChild(sheet);
     }

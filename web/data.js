@@ -581,8 +581,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 6
+                "type": "nextLevel",
+                "level": 6
               }
             },
             {
@@ -590,8 +590,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 5
+                "type": "nextLevel",
+                "level": 5
               }
             },
             {
@@ -599,8 +599,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 5
+                "type": "nextLevel",
+                "level": 5
               }
             }
           ]
@@ -613,8 +613,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 6
+                "type": "nextLevel",
+                "level": 6
               }
             },
             {
@@ -622,8 +622,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 7
+                "type": "nextLevel",
+                "level": 7
               }
             },
             {
@@ -631,8 +631,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 6
+                "type": "nextLevel",
+                "level": 6
               }
             }
           ]
@@ -645,8 +645,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 7
+                "type": "nextLevel",
+                "level": 7
               }
             },
             {
@@ -654,8 +654,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 8
               }
             },
             {
@@ -676,8 +676,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 9
               }
             },
             {
@@ -706,8 +706,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 21
+                "type": "nextLevel",
+                "level": 21
               }
             },
             {
@@ -744,8 +744,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 10
+                "type": "nextLevel",
+                "level": 10
               }
             },
             {
@@ -766,8 +766,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 21
+                "type": "nextLevel",
+                "level": 21
               }
             },
             {
@@ -825,8 +825,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 22
+                "type": "nextLevel",
+                "level": 22
               }
             },
             {
@@ -834,8 +834,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 22
+                "type": "nextLevel",
+                "level": 22
               }
             },
             {
@@ -843,8 +843,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 15
+                "type": "nextLevel",
+                "level": 15
               }
             }
           ]
@@ -857,8 +857,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 16
+                "type": "nextLevel",
+                "level": 16
               }
             },
             {
@@ -866,8 +866,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 14
+                "type": "nextLevel",
+                "level": 14
               }
             },
             {
@@ -875,8 +875,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 14
+                "type": "nextLevel",
+                "level": 14
               }
             }
           ]
@@ -889,8 +889,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 15
+                "type": "nextLevel",
+                "level": 15
               }
             },
             {
@@ -898,8 +898,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 17
+                "type": "nextLevel",
+                "level": 17
               }
             },
             {
@@ -907,8 +907,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 15
+                "type": "nextLevel",
+                "level": 15
               }
             }
           ]
@@ -921,8 +921,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 16
+                "type": "nextLevel",
+                "level": 16
               }
             },
             {
@@ -930,8 +930,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 16
+                "type": "nextLevel",
+                "level": 16
               }
             },
             {
@@ -939,8 +939,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 17
+                "type": "nextLevel",
+                "level": 17
               }
             }
           ]
@@ -953,8 +953,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 17
+                "type": "nextLevel",
+                "level": 17
               }
             },
             {
@@ -962,8 +962,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             },
             {
@@ -971,8 +971,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             }
           ]
@@ -985,8 +985,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 20
+                "type": "nextLevel",
+                "level": 20
               }
             },
             {
@@ -994,8 +994,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             },
             {
@@ -1003,8 +1003,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             }
           ]
@@ -1017,8 +1017,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             },
             {
@@ -1026,8 +1026,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             },
             {
@@ -1035,8 +1035,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 20
+                "type": "nextLevel",
+                "level": 20
               }
             }
           ]
@@ -1049,8 +1049,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 24
+                "type": "nextLevel",
+                "level": 24
               }
             },
             {
@@ -1058,8 +1058,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 20
+                "type": "nextLevel",
+                "level": 20
               }
             },
             {
@@ -1067,8 +1067,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             }
           ]
@@ -1081,8 +1081,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 25
+                "type": "nextLevel",
+                "level": 25
               }
             },
             {
@@ -1090,8 +1090,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 24
+                "type": "nextLevel",
+                "level": 24
               }
             },
             {
@@ -1099,8 +1099,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 22
+                "type": "nextLevel",
+                "level": 22
               }
             }
           ]
@@ -1113,8 +1113,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             },
             {
@@ -1122,8 +1122,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             },
             {
@@ -1131,8 +1131,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             }
           ]
@@ -1190,8 +1190,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             }
           ]
@@ -1212,8 +1212,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -1250,8 +1250,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             }
           ]
@@ -1264,8 +1264,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -1273,8 +1273,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -1282,8 +1282,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             }
           ]
@@ -1296,8 +1296,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -1305,8 +1305,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -1478,7 +1478,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "sell"
+                "type": "nextLevel",
+                "level": 7
               }
             },
             {
@@ -1486,7 +1487,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "sell"
+                "type": "nextLevel",
+                "level": 5
               }
             },
             {
@@ -1507,8 +1509,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 5
+                "type": "nextLevel",
+                "level": 5
               }
             },
             {
@@ -1516,8 +1518,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 5
+                "type": "nextLevel",
+                "level": 5
               }
             },
             {
@@ -1525,8 +1527,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 7
+                "type": "nextLevel",
+                "level": 7
               }
             }
           ]
@@ -1539,8 +1541,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 6
+                "type": "nextLevel",
+                "level": 6
               }
             },
             {
@@ -1548,8 +1550,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 6
+                "type": "nextLevel",
+                "level": 6
               }
             },
             {
@@ -1557,8 +1559,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 12
+                "type": "nextLevel",
+                "level": 12
               }
             }
           ]
@@ -1571,8 +1573,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 8
               }
             },
             {
@@ -1580,8 +1582,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 10
+                "type": "nextLevel",
+                "level": 10
               }
             },
             {
@@ -1589,8 +1591,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 9
+                "type": "nextLevel",
+                "level": 9
               }
             }
           ]
@@ -1603,8 +1605,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 8
               }
             },
             {
@@ -1620,8 +1622,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 11
+                "type": "nextLevel",
+                "level": 11
               }
             }
           ]
@@ -1650,8 +1652,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 10
+                "type": "nextLevel",
+                "level": 10
               }
             }
           ]
@@ -1672,8 +1674,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 10
+                "type": "nextLevel",
+                "level": 10
               }
             },
             {
@@ -1702,8 +1704,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 11
+                "type": "nextLevel",
+                "level": 11
               }
             },
             {
@@ -1711,8 +1713,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 16
+                "type": "nextLevel",
+                "level": 16
               }
             }
           ]
@@ -1733,8 +1735,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 12
+                "type": "nextLevel",
+                "level": 12
               }
             },
             {
@@ -1742,8 +1744,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 13
+                "type": "nextLevel",
+                "level": 13
               }
             }
           ]
@@ -1756,8 +1758,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 15
+                "type": "nextLevel",
+                "level": 15
               }
             },
             {
@@ -1765,8 +1767,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 14
+                "type": "nextLevel",
+                "level": 14
               }
             },
             {
@@ -1803,8 +1805,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 15
+                "type": "nextLevel",
+                "level": 15
               }
             }
           ]
@@ -1825,8 +1827,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 16
+                "type": "nextLevel",
+                "level": 16
               }
             },
             {
@@ -1834,8 +1836,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 15
+                "type": "nextLevel",
+                "level": 15
               }
             }
           ]
@@ -1856,8 +1858,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 16
               }
             },
             {
@@ -1865,8 +1867,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 17
+                "type": "nextLevel",
+                "level": 17
               }
             }
           ]
@@ -1879,8 +1881,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 22
+                "type": "nextLevel",
+                "level": 22
               }
             },
             {
@@ -1888,8 +1890,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             },
             {
@@ -1897,8 +1899,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             }
           ]
@@ -1911,8 +1913,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 19
               }
             },
             {
@@ -1928,8 +1930,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             }
           ]
@@ -1950,8 +1952,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             },
             {
@@ -1959,8 +1961,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 20
+                "type": "nextLevel",
+                "level": 20
               }
             }
           ]
@@ -1981,8 +1983,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             },
             {
@@ -1990,8 +1992,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 22
+                "type": "nextLevel",
+                "level": 22
               }
             }
           ]
@@ -2004,8 +2006,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             },
             {
@@ -2013,8 +2015,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -2022,8 +2024,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             }
           ]
@@ -2036,8 +2038,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 25
+                "type": "nextLevel",
+                "level": 25
               }
             },
             {
@@ -2045,8 +2047,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 24
+                "type": "nextLevel",
+                "level": 24
               }
             },
             {
@@ -2054,8 +2056,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             }
           ]
@@ -2134,8 +2136,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 24
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -2143,8 +2145,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 24
+                "type": "nextLevel",
+                "level": 24
               }
             }
           ]
@@ -2157,8 +2159,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -2174,8 +2176,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             }
           ]
@@ -2196,8 +2198,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             },
             {
@@ -2218,8 +2220,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -2227,8 +2229,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -2400,7 +2402,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "common",
               "action": {
-                "type": "sell"
+                "type": "nextLevel",
+                "level": 5
               }
             },
             {
@@ -2408,8 +2411,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 5
+                "type": "nextLevel",
+                "level": 5
               }
             },
             {
@@ -2417,8 +2420,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 5
+                "type": "nextLevel",
+                "level": 5
               }
             }
           ]
@@ -2431,8 +2434,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 6
+                "type": "nextLevel",
+                "level": 6
               }
             },
             {
@@ -2440,8 +2443,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 6
+                "type": "nextLevel",
+                "level": 6
               }
             },
             {
@@ -2449,8 +2452,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 7
+                "type": "nextLevel",
+                "level": 7
               }
             }
           ]
@@ -2463,8 +2466,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 7
+                "type": "nextLevel",
+                "level": 7
               }
             },
             {
@@ -2472,8 +2475,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 7
+                "type": "nextLevel",
+                "level": 7
               }
             },
             {
@@ -2481,8 +2484,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 8
               }
             }
           ]
@@ -2495,8 +2498,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 8
               }
             },
             {
@@ -2504,8 +2507,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 8
               }
             },
             {
@@ -2513,8 +2516,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 10
+                "type": "nextLevel",
+                "level": 10
               }
             }
           ]
@@ -2527,8 +2530,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 9
+                "type": "nextLevel",
+                "level": 9
               }
             },
             {
@@ -2536,8 +2539,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 9
+                "type": "nextLevel",
+                "level": 9
               }
             },
             {
@@ -2545,8 +2548,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 9
+                "type": "nextLevel",
+                "level": 9
               }
             }
           ]
@@ -2646,8 +2649,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 12
+                "type": "nextLevel",
+                "level": 12
               }
             },
             {
@@ -2655,8 +2658,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 12
+                "type": "nextLevel",
+                "level": 12
               }
             },
             {
@@ -2677,8 +2680,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 14
+                "type": "nextLevel",
+                "level": 14
               }
             },
             {
@@ -2686,8 +2689,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 13
+                "type": "nextLevel",
+                "level": 13
               }
             },
             {
@@ -2695,8 +2698,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             }
           ]
@@ -2738,8 +2741,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 21
+                "type": "nextLevel",
+                "level": 21
               }
             },
             {
@@ -2747,8 +2750,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 16
+                "type": "nextLevel",
+                "level": 16
               }
             },
             {
@@ -2756,8 +2759,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 15
+                "type": "nextLevel",
+                "level": 15
               }
             }
           ]
@@ -2778,8 +2781,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 16
+                "type": "nextLevel",
+                "level": 16
               }
             },
             {
@@ -2787,8 +2790,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 17
+                "type": "nextLevel",
+                "level": 17
               }
             }
           ]
@@ -2809,8 +2812,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             },
             {
@@ -2818,8 +2821,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             }
           ]
@@ -2840,8 +2843,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             },
             {
@@ -2849,8 +2852,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             }
           ]
@@ -2863,8 +2866,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 21
+                "type": "nextLevel",
+                "level": 21
               }
             },
             {
@@ -2872,8 +2875,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             },
             {
@@ -2881,8 +2884,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 20
+                "type": "nextLevel",
+                "level": 20
               }
             }
           ]
@@ -2903,8 +2906,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 24
+                "type": "nextLevel",
+                "level": 24
               }
             },
             {
@@ -2912,8 +2915,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 25
+                "type": "nextLevel",
+                "level": 25
               }
             }
           ]
@@ -2926,8 +2929,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             },
             {
@@ -2935,8 +2938,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -2944,8 +2947,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 22
+                "type": "nextLevel",
+                "level": 22
               }
             }
           ]
@@ -2958,8 +2961,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             },
             {
@@ -2967,8 +2970,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -2976,8 +2979,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             }
           ]
@@ -3035,8 +3038,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 24
+                "type": "nextLevel",
+                "level": 24
               }
             }
           ]
@@ -3057,8 +3060,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -3079,8 +3082,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             },
             {
@@ -3096,8 +3099,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             }
           ]
@@ -3126,8 +3129,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             }
           ]
@@ -3140,8 +3143,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -3178,8 +3181,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -3187,8 +3190,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             }
           ]
@@ -3323,8 +3326,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 5
+                "type": "nextLevel",
+                "level": 5
               }
             },
             {
@@ -3332,8 +3335,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 5
+                "type": "nextLevel",
+                "level": 5
               }
             },
             {
@@ -3341,8 +3344,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 5
+                "type": "nextLevel",
+                "level": 5
               }
             }
           ]
@@ -3355,8 +3358,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 6
+                "type": "nextLevel",
+                "level": 6
               }
             },
             {
@@ -3364,8 +3367,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 6
+                "type": "nextLevel",
+                "level": 6
               }
             },
             {
@@ -3373,8 +3376,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 7
+                "type": "nextLevel",
+                "level": 7
               }
             }
           ]
@@ -3387,8 +3390,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 7
+                "type": "nextLevel",
+                "level": 7
               }
             },
             {
@@ -3396,8 +3399,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 7
+                "type": "nextLevel",
+                "level": 7
               }
             },
             {
@@ -3405,8 +3408,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 8
               }
             }
           ]
@@ -3419,8 +3422,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 8
               }
             },
             {
@@ -3428,8 +3431,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 8
+                "type": "nextLevel",
+                "level": 8
               }
             },
             {
@@ -3437,8 +3440,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 10
+                "type": "nextLevel",
+                "level": 10
               }
             }
           ]
@@ -3451,8 +3454,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 9
+                "type": "nextLevel",
+                "level": 9
               }
             },
             {
@@ -3460,8 +3463,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 9
+                "type": "nextLevel",
+                "level": 9
               }
             },
             {
@@ -3469,8 +3472,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "common",
               "action": {
-                "type": "credits",
-                "amount": 9
+                "type": "nextLevel",
+                "level": 9
               }
             }
           ]
@@ -3570,8 +3573,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 14
+                "type": "nextLevel",
+                "level": 12
               }
             },
             {
@@ -3579,8 +3582,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 12
+                "type": "nextLevel",
+                "level": 12
               }
             },
             {
@@ -3601,8 +3604,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 15
+                "type": "nextLevel",
+                "level": 15
               }
             },
             {
@@ -3610,8 +3613,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 13
+                "type": "nextLevel",
+                "level": 13
               }
             },
             {
@@ -3619,8 +3622,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 16
+                "type": "nextLevel",
+                "level": 16
               }
             }
           ]
@@ -3633,8 +3636,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "rare",
               "action": {
-                "type": "credits",
-                "amount": 14
+                "type": "nextLevel",
+                "level": 14
               }
             },
             {
@@ -3642,8 +3645,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 14
+                "type": "nextLevel",
+                "level": 14
               }
             },
             {
@@ -3651,8 +3654,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 14
+                "type": "nextLevel",
+                "level": 14
               }
             }
           ]
@@ -3665,8 +3668,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 15
+                "type": "nextLevel",
+                "level": 15
               }
             },
             {
@@ -3674,8 +3677,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 17
+                "type": "nextLevel",
+                "level": 17
               }
             },
             {
@@ -3683,8 +3686,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 24
+                "type": "nextLevel",
+                "level": 24
               }
             }
           ]
@@ -3705,8 +3708,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 21
+                "type": "nextLevel",
+                "level": 21
               }
             },
             {
@@ -3735,8 +3738,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "epic",
               "action": {
-                "type": "credits",
-                "amount": 22
+                "type": "nextLevel",
+                "level": 22
               }
             },
             {
@@ -3744,8 +3747,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             }
           ]
@@ -3766,8 +3769,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 18
+                "type": "nextLevel",
+                "level": 18
               }
             },
             {
@@ -3775,8 +3778,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 18
               }
             }
           ]
@@ -3789,8 +3792,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 20
+                "type": "nextLevel",
+                "level": 20
               }
             },
             {
@@ -3798,8 +3801,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 20
               }
             },
             {
@@ -3807,8 +3810,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             }
           ]
@@ -3821,8 +3824,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             },
             {
@@ -3830,8 +3833,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -3839,8 +3842,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 19
+                "type": "nextLevel",
+                "level": 19
               }
             }
           ]
@@ -3853,8 +3856,8 @@ window.REBIRTH_DATA = {
               "skin": "diamond",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 24
+                "type": "nextLevel",
+                "level": 24
               }
             },
             {
@@ -3862,8 +3865,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -3871,8 +3874,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             }
           ]
@@ -3885,8 +3888,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             },
             {
@@ -3894,8 +3897,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 25
+                "type": "nextLevel",
+                "level": 25
               }
             },
             {
@@ -3903,8 +3906,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 23
+                "type": "nextLevel",
+                "level": 23
               }
             }
           ]
@@ -3975,8 +3978,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -4021,8 +4024,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 26
+                "type": "nextLevel",
+                "level": 26
               }
             }
           ]
@@ -4035,8 +4038,8 @@ window.REBIRTH_DATA = {
               "skin": "beskar",
               "rarity": "legendary",
               "action": {
-                "type": "credits",
-                "amount": 28
+                "type": "nextLevel",
+                "level": 28
               }
             },
             {
@@ -4044,8 +4047,8 @@ window.REBIRTH_DATA = {
               "skin": "default",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 29
+                "type": "nextLevel",
+                "level": 29
               }
             },
             {
@@ -4066,8 +4069,8 @@ window.REBIRTH_DATA = {
               "skin": "gold",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {
@@ -4125,8 +4128,8 @@ window.REBIRTH_DATA = {
               "skin": "rainbow",
               "rarity": "mythic",
               "action": {
-                "type": "credits",
-                "amount": 30
+                "type": "nextLevel",
+                "level": 30
               }
             },
             {

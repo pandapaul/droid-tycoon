@@ -35,7 +35,7 @@ Cash costs and L13+ bonuses are identical across cycles; only the three droid ga
   "droid": "mecha-droid",
   "skin": "beskar",
   "rarity": "legendary",
-  "action": { "type": "credits", "amount": 29 }
+  "action": { "type": "nextLevel", "level": 29 }
 }
 ```
 
@@ -50,9 +50,9 @@ or
 | `droid` | Key in `droids.json` |
 | `skin` | `default` \| `gold` \| `diamond` \| `rainbow` \| `beskar` \| `galactic` |
 | `rarity` | `common` \| `uncommon` \| `rare` \| `epic` \| `legendary` \| `mythic` |
-| `action.type` | `sell` (chart shows SELL) or `credits` (chart shows a number) |
+| `action.type` | `sell` (safe to sell — not needed again this cycle) or `nextLevel` (needed again at `level`) |
 
-On the source charts, numeric actions appear beside a circular badge; SELL appears beside the hexagonal currency mark. Higher skins satisfy lower skin requirements for the same droid.
+On the source charts, a number badge is the next rebirth level that requires this droid; SELL means it will not be required again in the cycle. Higher skins satisfy lower skin requirements for the same droid.
 
 ## Cycle file
 

@@ -39,7 +39,8 @@
           "skin": "default",
           "rarity": "common",
           "action": {
-            "type": "sell"
+            "type": "nextLevel",
+            "level": 5
           }
         },
         {
@@ -47,8 +48,8 @@
           "skin": "default",
           "rarity": "common",
           "action": {
-            "type": "credits",
-            "amount": 5
+            "type": "nextLevel",
+            "level": 5
           }
         },
         {
@@ -56,8 +57,8 @@
           "skin": "default",
           "rarity": "common",
           "action": {
-            "type": "credits",
-            "amount": 5
+            "type": "nextLevel",
+            "level": 5
           }
         }
       ]
@@ -70,8 +71,8 @@
           "skin": "default",
           "rarity": "rare",
           "action": {
-            "type": "credits",
-            "amount": 6
+            "type": "nextLevel",
+            "level": 6
           }
         },
         {
@@ -79,8 +80,8 @@
           "skin": "default",
           "rarity": "common",
           "action": {
-            "type": "credits",
-            "amount": 6
+            "type": "nextLevel",
+            "level": 6
           }
         },
         {
@@ -88,8 +89,8 @@
           "skin": "default",
           "rarity": "rare",
           "action": {
-            "type": "credits",
-            "amount": 7
+            "type": "nextLevel",
+            "level": 7
           }
         }
       ]
@@ -102,8 +103,8 @@
           "skin": "gold",
           "rarity": "rare",
           "action": {
-            "type": "credits",
-            "amount": 7
+            "type": "nextLevel",
+            "level": 7
           }
         },
         {
@@ -111,8 +112,8 @@
           "skin": "gold",
           "rarity": "common",
           "action": {
-            "type": "credits",
-            "amount": 7
+            "type": "nextLevel",
+            "level": 7
           }
         },
         {
@@ -120,8 +121,8 @@
           "skin": "gold",
           "rarity": "rare",
           "action": {
-            "type": "credits",
-            "amount": 8
+            "type": "nextLevel",
+            "level": 8
           }
         }
       ]
@@ -134,8 +135,8 @@
           "skin": "gold",
           "rarity": "rare",
           "action": {
-            "type": "credits",
-            "amount": 8
+            "type": "nextLevel",
+            "level": 8
           }
         },
         {
@@ -143,8 +144,8 @@
           "skin": "gold",
           "rarity": "common",
           "action": {
-            "type": "credits",
-            "amount": 8
+            "type": "nextLevel",
+            "level": 8
           }
         },
         {
@@ -152,8 +153,8 @@
           "skin": "gold",
           "rarity": "rare",
           "action": {
-            "type": "credits",
-            "amount": 10
+            "type": "nextLevel",
+            "level": 10
           }
         }
       ]
@@ -166,8 +167,8 @@
           "skin": "diamond",
           "rarity": "rare",
           "action": {
-            "type": "credits",
-            "amount": 9
+            "type": "nextLevel",
+            "level": 9
           }
         },
         {
@@ -175,8 +176,8 @@
           "skin": "diamond",
           "rarity": "rare",
           "action": {
-            "type": "credits",
-            "amount": 9
+            "type": "nextLevel",
+            "level": 9
           }
         },
         {
@@ -184,8 +185,8 @@
           "skin": "diamond",
           "rarity": "common",
           "action": {
-            "type": "credits",
-            "amount": 9
+            "type": "nextLevel",
+            "level": 9
           }
         }
       ]
@@ -285,8 +286,8 @@
           "skin": "default",
           "rarity": "epic",
           "action": {
-            "type": "credits",
-            "amount": 12
+            "type": "nextLevel",
+            "level": 12
           }
         },
         {
@@ -294,8 +295,8 @@
           "skin": "default",
           "rarity": "epic",
           "action": {
-            "type": "credits",
-            "amount": 12
+            "type": "nextLevel",
+            "level": 12
           }
         },
         {
@@ -316,8 +317,8 @@
           "skin": "default",
           "rarity": "epic",
           "action": {
-            "type": "credits",
-            "amount": 14
+            "type": "nextLevel",
+            "level": 14
           }
         },
         {
@@ -325,8 +326,8 @@
           "skin": "default",
           "rarity": "epic",
           "action": {
-            "type": "credits",
-            "amount": 13
+            "type": "nextLevel",
+            "level": 13
           }
         },
         {
@@ -334,8 +335,8 @@
           "skin": "default",
           "rarity": "epic",
           "action": {
-            "type": "credits",
-            "amount": 18
+            "type": "nextLevel",
+            "level": 18
           }
         }
       ]
@@ -377,8 +378,8 @@
           "skin": "rainbow",
           "rarity": "epic",
           "action": {
-            "type": "credits",
-            "amount": 21
+            "type": "nextLevel",
+            "level": 21
           }
         },
         {
@@ -386,8 +387,8 @@
           "skin": "default",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 16
+            "type": "nextLevel",
+            "level": 16
           }
         },
         {
@@ -395,8 +396,8 @@
           "skin": "default",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 15
+            "type": "nextLevel",
+            "level": 15
           }
         }
       ]
@@ -417,8 +418,8 @@
           "skin": "default",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 16
+            "type": "nextLevel",
+            "level": 16
           }
         },
         {
@@ -426,8 +427,8 @@
           "skin": "gold",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 17
+            "type": "nextLevel",
+            "level": 17
           }
         }
       ]
@@ -448,8 +449,8 @@
           "skin": "gold",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 18
+            "type": "nextLevel",
+            "level": 18
           }
         },
         {
@@ -457,8 +458,8 @@
           "skin": "gold",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 18
+            "type": "nextLevel",
+            "level": 18
           }
         }
       ]
@@ -479,8 +480,8 @@
           "skin": "diamond",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 19
+            "type": "nextLevel",
+            "level": 19
           }
         },
         {
@@ -488,8 +489,8 @@
           "skin": "gold",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 19
+            "type": "nextLevel",
+            "level": 19
           }
         }
       ]
@@ -502,8 +503,8 @@
           "skin": "rainbow",
           "rarity": "epic",
           "action": {
-            "type": "credits",
-            "amount": 21
+            "type": "nextLevel",
+            "level": 21
           }
         },
         {
@@ -511,8 +512,8 @@
           "skin": "diamond",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 19
+            "type": "nextLevel",
+            "level": 19
           }
         },
         {
@@ -520,8 +521,8 @@
           "skin": "gold",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 20
+            "type": "nextLevel",
+            "level": 20
           }
         }
       ]
@@ -542,8 +543,8 @@
           "skin": "diamond",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 24
+            "type": "nextLevel",
+            "level": 24
           }
         },
         {
@@ -551,8 +552,8 @@
           "skin": "diamond",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 25
+            "type": "nextLevel",
+            "level": 25
           }
         }
       ]
@@ -565,8 +566,8 @@
           "skin": "diamond",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 23
+            "type": "nextLevel",
+            "level": 23
           }
         },
         {
@@ -574,8 +575,8 @@
           "skin": "rainbow",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 30
+            "type": "nextLevel",
+            "level": 30
           }
         },
         {
@@ -583,8 +584,8 @@
           "skin": "rainbow",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 22
+            "type": "nextLevel",
+            "level": 22
           }
         }
       ]
@@ -597,8 +598,8 @@
           "skin": "rainbow",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 23
+            "type": "nextLevel",
+            "level": 23
           }
         },
         {
@@ -606,8 +607,8 @@
           "skin": "rainbow",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 29
+            "type": "nextLevel",
+            "level": 29
           }
         },
         {
@@ -615,8 +616,8 @@
           "skin": "rainbow",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 23
+            "type": "nextLevel",
+            "level": 23
           }
         }
       ]
@@ -674,8 +675,8 @@
           "skin": "beskar",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 24
+            "type": "nextLevel",
+            "level": 24
           }
         }
       ]
@@ -696,8 +697,8 @@
           "skin": "beskar",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 29
+            "type": "nextLevel",
+            "level": 29
           }
         },
         {
@@ -718,8 +719,8 @@
           "skin": "beskar",
           "rarity": "legendary",
           "action": {
-            "type": "credits",
-            "amount": 28
+            "type": "nextLevel",
+            "level": 28
           }
         },
         {
@@ -735,8 +736,8 @@
           "skin": "default",
           "rarity": "mythic",
           "action": {
-            "type": "credits",
-            "amount": 28
+            "type": "nextLevel",
+            "level": 28
           }
         }
       ]
@@ -765,8 +766,8 @@
           "skin": "gold",
           "rarity": "mythic",
           "action": {
-            "type": "credits",
-            "amount": 28
+            "type": "nextLevel",
+            "level": 28
           }
         }
       ]
@@ -779,8 +780,8 @@
           "skin": "gold",
           "rarity": "mythic",
           "action": {
-            "type": "credits",
-            "amount": 30
+            "type": "nextLevel",
+            "level": 30
           }
         },
         {
@@ -817,8 +818,8 @@
           "skin": "rainbow",
           "rarity": "mythic",
           "action": {
-            "type": "credits",
-            "amount": 29
+            "type": "nextLevel",
+            "level": 29
           }
         },
         {
@@ -826,8 +827,8 @@
           "skin": "beskar",
           "rarity": "mythic",
           "action": {
-            "type": "credits",
-            "amount": 30
+            "type": "nextLevel",
+            "level": 30
           }
         }
       ]

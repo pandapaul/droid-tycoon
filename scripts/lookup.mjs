@@ -40,7 +40,7 @@ const bonuses = Object.fromEntries(data.bonuses.levels.map((l) => [l.level, l]))
 const droidName = (id) => data.droids[id]?.name || id;
 
 function fmtAction(a) {
-  return a.type === 'sell' ? 'SELL' : String(a.amount);
+  return a.type === 'sell' ? 'safe to sell' : `next L${a.level}`;
 }
 
 function fmtReq(req) {
