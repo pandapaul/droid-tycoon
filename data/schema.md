@@ -12,7 +12,7 @@ Source: four “updated rebirth charts” PNGs in `original-source/` (Cycles 1�
 | `cycles/{1-4}.json` | Per-cycle level requirements |
 | `rebirth.json` | Single-file bundle of the above for simple clients |
 
-Cash costs and L13+ bonuses are identical across cycles; only the three droid gates change.
+Cash costs and L13+ bonuses are identical across cycles; only the three required droids change.
 
 ## Cost entry
 

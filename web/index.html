@@ -159,7 +159,7 @@
       align-items: flex-start;
       gap: 0.75rem;
     }
-    .card-head h2 { margin: 0; }
+    .card-head h2, .card-head h3 { margin: 0; }
     .icon-btn {
       font: inherit;
       font-size: 1.25rem;
@@ -526,7 +526,7 @@
         .filter((c) => byCycle[c].length)
         .map((c) => `
           <div class="gate-group">
-            <h4>Cycle ${c} · ${byCycle[c].length} gate${byCycle[c].length === 1 ? '' : 's'}</h4>
+            <h4>Cycle ${c} · ${byCycle[c].length === 1 ? 'used once' : `used ${byCycle[c].length} times`}</h4>
             ${byCycle[c].map((h) => `
               <button type="button" class="gate-row" data-cycle="${h.c}" data-level="${h.level}">
                 L${h.level} · ${h.cost} · ${fmtSkinRarity(h.req)} · ${fmtAction(h.req.action)}
@@ -539,16 +539,16 @@
       dossierEl.innerHTML = `
         <div class="card-head">
           <div>
-            <h3>Droid dossier</h3>
+            <h3>Droid Data</h3>
             <h2>${droidName(droidId)}</h2>
           </div>
-          <button type="button" class="icon-btn" id="dossierClose" aria-label="Close dossier">×</button>
+          <button type="button" class="icon-btn" id="dossierClose" aria-label="Close droid data">×</button>
         </div>
         <p class="summary">
-          ${hits.length} rebirth gate${hits.length === 1 ? '' : 's'}
+          ${hits.length === 1 ? 'Used once' : `Used ${hits.length} times`}
           ${skins.length ? ` · Skins: ${skins.join(' → ')}` : ''}
         </p>
-        ${groups || '<p class="empty">No rebirth gates found.</p>'}
+        ${groups || '<p class="empty">Not used in any rebirth requirements.</p>'}
       `;
 
       dossierEl.querySelector('#dossierClose').addEventListener('click', () => closeDossier());
@@ -651,6 +651,12 @@
       }
     };
 
+    const clearSearch = () => {
+      searchEl.value = '';
+      renderSearch();
+      syncUrl();
+    };
+
     const renderSearch = () => {
       const qRaw = searchEl.value.trim();
       const q = norm(qRaw);
@@ -674,8 +680,12 @@
         }
       }
       resultsEl.hidden = false;
-      resultsEl.innerHTML = `<h3>Droid search · ${hits.length} hit${hits.length === 1 ? '' : 's'}</h3>` +
-        (hits.length ? hits.map((h) => `
+      resultsEl.innerHTML = `
+        <div class="card-head">
+          <h3>Droid search · ${hits.length} hit${hits.length === 1 ? '' : 's'}</h3>
+          <button type="button" class="icon-btn" id="searchClear" aria-label="Clear search">×</button>
+        </div>
+      ` + (hits.length ? hits.map((h) => `
           <div class="hit">
             <button type="button" class="hit-jump" data-cycle="${h.c}" data-level="${h.level}">
               <strong>C${h.c} L${h.level}</strong> (${h.cost})
@@ -685,6 +695,7 @@
             </span>
           </div>
         `).join('') : `<p class="empty">No matches for “${qRaw}”.</p>`);
+      resultsEl.querySelector('#searchClear').addEventListener('click', clearSearch);
       bindDroidLinks(resultsEl);
       resultsEl.querySelectorAll('.hit-jump').forEach((btn) => {
         btn.addEventListener('click', () => jumpTo(btn.dataset.cycle, btn.dataset.level));
